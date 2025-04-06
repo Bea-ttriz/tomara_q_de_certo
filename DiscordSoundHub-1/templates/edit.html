@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Áudio - {{ audio.nome }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Início</a></li>
+                <li class="breadcrumb-item active">Editar Áudio</li>
+            </ol>
+        </nav>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">
+                    {% if audio.emoji %}{{ audio.emoji }} {% endif %}
+                    Editar: {{ audio.nome }}
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center mb-4">
+                    <audio controls src="{{ url_for('get_audio', name=audio.nome) }}"></audio>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <div class="mb-2"><strong>Tipo:</strong> {{ audio.tipo|capitalize }}</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-2">
+                            <strong>Duração:</strong> 
+                            {{ audio.duracao|default(0)|int//1000//60 }}:{{ '%02d'|format(audio.duracao|default(0)|int//1000%60) }}
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="nav nav-tabs" id="editTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab" aria-selected="true">
+                            <i class="bi bi-info-circle"></i> Informações
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="edit-tab" data-bs-toggle="tab" data-bs-target="#edit" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-scissors"></i> Edição
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3" id="editTabsContent">
+                    <!-- Aba de Informações -->
+                    <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-pencil"></i> Renomear Áudio</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ url_for('edit_audio', name=audio.nome) }}" method="post">
+                                    <input type="hidden" name="operation" value="rename">
+                                    <div class="mb-3">
+                                        <label for="new_name" class="form-label">Novo Nome</label>
+                                        <input type="text" class="form-control" id="new_name" name="new_name" value="{{ audio.nome }}" required>
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary">Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-emoji-smile"></i> Emoji Associado</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ url_for('edit_audio', name=audio.nome) }}" method="post">
+                                    <input type="hidden" name="operation" value="set_emoji">
+                                    <div class="mb-3">
+                                        <label for="emoji" class="form-label">Emoji</label>
+                                        <input type="text" class="form-control custom-emoji-input" id="emoji" name="emoji" maxlength="2" value="{{ audio.emoji }}" placeholder="🎵">
+                                        <div class="form-text">Associe um emoji para usar reações no Discord</div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary">Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aba de Edição -->
+                    <div class="tab-pane fade" id="edit" role="tabpanel" aria-labelledby="edit-tab">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-scissors"></i> Cortar Áudio</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ url_for('edit_audio', name=audio.nome) }}" method="post">
+                                    <input type="hidden" name="operation" value="cut">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="start_time" class="form-label">Tempo Inicial (MM:SS)</label>
+                                            <input type="text" class="form-control" id="start_time" name="start_time" placeholder="00:00" required>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="end_time" class="form-label">Tempo Final (MM:SS)</label>
+                                            <input type="text" class="form-control" id="end_time" name="end_time" placeholder="01:30" required>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary">Cortar e Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-arrow-repeat"></i> Inverter Áudio</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Esta operação irá criar uma versão invertida do áudio atual.</p>
+                                <form action="{{ url_for('edit_audio', name=audio.nome) }}" method="post">
+                                    <input type="hidden" name="operation" value="reverse">
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary">Inverter e Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-speedometer2"></i> Alterar Velocidade</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ url_for('edit_audio', name=audio.nome) }}" method="post">
+                                    <input type="hidden" name="operation" value="speed">
+                                    <div class="mb-3">
+                                        <label for="speed_factor" class="form-label">Fator de Velocidade</label>
+                                        <input type="range" class="form-range" id="speed_factor" name="speed_factor" min="0.5" max="2" step="0.1" value="1">
+                                        <div class="d-flex justify-content-between">
+                                            <span>Lento (0.5x)</span>
+                                            <span id="speedValue">1.0x</span>
+                                            <span>Rápido (2.0x)</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary">Aplicar e Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Atualizar o valor do controle deslizante de velocidade
+        const speedFactor = document.getElementById('speed_factor');
+        const speedValue = document.getElementById('speedValue');
+        
+        if (speedFactor && speedValue) {
+            speedFactor.addEventListener('input', function() {
+                speedValue.textContent = parseFloat(this.value).toFixed(1) + 'x';
+            });
+        }
+    });
+</script>
+{% endblock %}

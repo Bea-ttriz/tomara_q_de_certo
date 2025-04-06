@@ -1,0 +1,442 @@
+import asyncio
+import discord
+from discord.ext import commands
+import logging
+import datetime
+
+# Configuração do logger
+logger = logging.getLogger('discord_bot.activation')
+
+import os
+import json
+
+class Activation(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.is_active = False  # Estado de ativação do bot
+        self.activation_task = None  # Tarefa para gerenciar o temporizador
+        self.activation_time = None  # Quando o bot foi ativado
+        self.default_duration = 7200  # 2 horas em segundos (padrão)
+        self.activation_duration = self.default_duration
+        self.timeout_message_sent = {}  # Para controlar mensagens de timeout por servidor
+        self.settings_file = "cogs/activation_settings.json"
+        
+        # Carregar configurações personalizadas
+        self.load_settings()
+        
+        logger.info("Sistema de ativação temporal iniciado")
+    
+    def cog_unload(self):
+        """Chamado quando o cog é descarregado"""
+        if self.activation_task:
+            self.activation_task.cancel()
+    
+    @commands.Cog.listener()
+    async def on_ready(self):
+        """Configuração inicial quando o bot está pronto"""
+        logger.info("Módulo de ativação inicializado")
+        
+        # Exibir instruções claras ao iniciar
+        if not self.is_active:
+            logger.info("Bot iniciado em estado desativado")
+            for guild in self.bot.guilds:
+                # Procurar o primeiro canal de texto em cada servidor
+                text_channel = None
+                for channel in guild.text_channels:
+                    if channel.permissions_for(guild.me).send_messages:
+                        text_channel = channel
+                        break
+                
+                if text_channel:
+                    try:
+                        embed = discord.Embed(
+                            title="🤖 Bot Iniciado - Desativado",
+                            description="O bot foi iniciado, mas está atualmente desativado.",
+                            color=discord.Color.orange()
+                        )
+                        embed.add_field(
+                            name="Como ativar",
+                            value="Você pode ativar o bot de várias formas:\n"
+                                 "- Digite `!ativar` (com o prefixo)\n"
+                                 "- Digite apenas `ativar` (sem prefixo)\n"
+                                 "- Digite `ativar bot` ou `bot ativar`",
+                            inline=False
+                        )
+                        # Converter para horas
+                        duracao_horas = round(self.activation_duration / 3600)
+                        embed.add_field(
+                            name="Duração",
+                            value=f"O bot permanecerá ativo por {duracao_horas} hora{'s' if duracao_horas > 1 else ''} após ser ativado.",
+                            inline=False
+                        )
+                        embed.set_footer(text="Desenvolvido para o servidor rivoTRIO")
+                        
+                        await text_channel.send(embed=embed)
+                        logger.info(f"Mensagem de instrução de ativação enviada para {guild.name}")
+                    except Exception as e:
+                        logger.error(f"Erro ao enviar mensagem de instrução: {e}")
+    
+    async def deactivation_timer(self, ctx):
+        """Função que gerencia o temporizador de desativação"""
+        try:
+            # Esperar pelo tempo de duração
+            await asyncio.sleep(self.activation_duration)
+            
+            # Depois do tempo, desativar o bot
+            self.is_active = False
+            self.activation_time = None
+            
+            # Anunciar que o bot foi desativado por timeout
+            try:
+                # Preparar a mensagem de timeout
+                # Converter segundos para horas para exibição
+                duracao_horas = round(self.activation_duration / 3600)
+                embed = discord.Embed(
+                    title="⏱️ Tempo Esgotado",
+                    description=f"O bot foi desativado automaticamente após {duracao_horas} hora{'s' if duracao_horas > 1 else ''} de uso.",
+                    color=discord.Color.red()
+                )
+                embed.add_field(
+                    name="Como reativar",
+                    value=self.get_activation_message(),
+                    inline=False
+                )
+                
+                # Enviar a mensagem apenas se não houver uma mensagem recente
+                guild_id = ctx.guild.id
+                if guild_id not in self.timeout_message_sent or self.timeout_message_sent[guild_id] + datetime.timedelta(minutes=10) < datetime.datetime.now():
+                    await ctx.send(embed=embed)
+                    self.timeout_message_sent[guild_id] = datetime.datetime.now()
+                
+                # Desconectar de todos os canais de voz
+                for voice_client in self.bot.voice_clients:
+                    if voice_client.guild.id == ctx.guild.id:
+                        await voice_client.disconnect(force=True)
+                        logger.info(f"Desconectado do canal de voz em {voice_client.guild.name} após timeout")
+            
+            except Exception as e:
+                logger.error(f"Erro ao enviar mensagem de timeout: {e}")
+            
+            duracao_horas = round(self.activation_duration / 3600)
+            logger.info(f"Bot desativado por timeout após {duracao_horas} hora(s)")
+        
+        except asyncio.CancelledError:
+            # A tarefa foi cancelada, isso é normal durante a desativação manual
+            logger.info("Timer de desativação cancelado manualmente")
+        
+        except Exception as e:
+            logger.error(f"Erro no timer de desativação: {e}")
+    
+    @commands.command(name="ativar")
+    async def activate_bot(self, ctx):
+        """Ativa o bot pelo período configurado (padrão: 2 horas)"""
+        # Log para depuração
+        logger.info(f"Comando !ativar recebido de {ctx.author.name} no servidor {ctx.guild.name}")
+        
+        if self.is_active:
+            # Mostrar quanto tempo resta
+            if self.activation_time:
+                elapsed = (datetime.datetime.now() - self.activation_time).total_seconds()
+                remaining = max(0, self.activation_duration - elapsed)
+                hours, remainder = divmod(int(remaining), 3600)
+                minutes, seconds = divmod(remainder, 60)
+                
+                time_str = ""
+                if hours > 0:
+                    time_str += f"{hours} hora{'s' if hours > 1 else ''} "
+                if minutes > 0 or hours > 0:
+                    time_str += f"{minutes} minuto{'s' if minutes != 1 else ''} "
+                time_str += f"{seconds} segundo{'s' if seconds != 1 else ''}"
+                
+                logger.info(f"Bot já ativo, tempo restante: {time_str}")
+                
+                embed = discord.Embed(
+                    title="✅ Bot já está ativo",
+                    description=f"O bot já está ativado e funcionando.",
+                    color=discord.Color.green()
+                )
+                embed.add_field(
+                    name="⏱️ Tempo restante",
+                    value=f"{time_str}",
+                    inline=False
+                )
+                
+                await ctx.send(embed=embed)
+            else:
+                await ctx.send("✅ O bot já está ativo e funcionando.")
+            return
+        
+        # Ativar o bot
+        self.is_active = True
+        self.activation_time = datetime.datetime.now()
+        
+        # Iniciar o temporizador de desativação
+        if self.activation_task:
+            self.activation_task.cancel()
+        self.activation_task = asyncio.create_task(self.deactivation_timer(ctx))
+        
+        # Informar ao usuário
+        duracao_horas = round(self.activation_duration / 3600)
+        embed = discord.Embed(
+            title="🎵 Bot Ativado",
+            description=f"O bot foi ativado com sucesso e ficará disponível por {duracao_horas} hora{'s' if duracao_horas > 1 else ''}.",
+            color=discord.Color.green()
+        )
+        embed.add_field(
+            name="Comandos disponíveis",
+            value="`!ajuda` - Para ver todos os comandos\n"
+                  "`!tocar <nome>` - Para reproduzir um áudio\n"
+                  "`!listar` - Para ver todos os áudios disponíveis",
+            inline=False
+        )
+        embed.add_field(
+            name="Desativação automática",
+            value=f"O bot será desativado automaticamente após {duracao_horas} hora{'s' if duracao_horas > 1 else ''}.",
+            inline=False
+        )
+        
+        await ctx.send(embed=embed)
+        logger.info(f"Bot ativado por {ctx.author.name} no servidor {ctx.guild.name}")
+    
+    @commands.command(name="desativar")
+    async def deactivate_bot(self, ctx):
+        """Desativa o bot manualmente"""
+        if not self.is_active:
+            await ctx.send("⚠️ O bot já está desativado.")
+            return
+        
+        # Desativar o bot
+        self.is_active = False
+        self.activation_time = None
+        
+        # Cancelar o temporizador se estiver ativo
+        if self.activation_task:
+            self.activation_task.cancel()
+            self.activation_task = None
+        
+        # Desconectar de todos os canais de voz
+        for voice_client in self.bot.voice_clients:
+            if voice_client.guild.id == ctx.guild.id:
+                await voice_client.disconnect(force=True)
+                logger.info(f"Desconectado do canal de voz em {voice_client.guild.name} após desativação manual")
+        
+        # Informar ao usuário
+        embed = discord.Embed(
+            title="🛑 Bot Desativado",
+            description="O bot foi desativado manualmente.",
+            color=discord.Color.red()
+        )
+        embed.add_field(
+            name="Reativação",
+            value=self.get_activation_message(),
+            inline=False
+        )
+        
+        await ctx.send(embed=embed)
+        logger.info(f"Bot desativado manualmente por {ctx.author.name} no servidor {ctx.guild.name}")
+    
+    @commands.command(name="status")
+    async def check_status(self, ctx):
+        """Verifica o status atual do bot (ativo/inativo)"""
+        if self.is_active:
+            # Calcular tempo restante
+            elapsed = (datetime.datetime.now() - self.activation_time).total_seconds()
+            remaining = max(0, self.activation_duration - elapsed)
+            hours, remainder = divmod(int(remaining), 3600)
+            minutes, seconds = divmod(remainder, 60)
+            
+            time_str = ""
+            if hours > 0:
+                time_str += f"{hours} hora{'s' if hours > 1 else ''} "
+            if minutes > 0 or hours > 0:
+                time_str += f"{minutes} minuto{'s' if minutes != 1 else ''} "
+            time_str += f"{seconds} segundo{'s' if seconds != 1 else ''}"
+            
+            embed = discord.Embed(
+                title="✅ Bot Ativo",
+                description="O bot está ativo e pronto para uso.",
+                color=discord.Color.green()
+            )
+            embed.add_field(
+                name="⏱️ Tempo restante",
+                value=f"{time_str}",
+                inline=False
+            )
+            
+            # Adicionar informações de uso
+            player_cog = self.bot.get_cog('Player')
+            if player_cog and ctx.guild.id in player_cog.currently_playing:
+                currently_playing = player_cog.currently_playing[ctx.guild.id]
+                embed.add_field(
+                    name="🎵 Tocando agora",
+                    value=f"{currently_playing}",
+                    inline=True
+                )
+            
+            await ctx.send(embed=embed)
+        else:
+            embed = discord.Embed(
+                title="⚠️ Bot Inativo",
+                description="O bot está desativado no momento.",
+                color=discord.Color.orange()
+            )
+            embed.add_field(
+                name="Como ativar",
+                value=self.get_activation_message(),
+                inline=False
+            )
+            
+            await ctx.send(embed=embed)
+
+    # Interceptar todos os comandos para verificar se o bot está ativo
+    @commands.Cog.listener()
+    async def on_command(self, ctx):
+        """Verifica se o bot está ativo antes de executar qualquer comando"""
+        # Log para depuração
+        logger.info(f"Comando detectado: !{ctx.command.name} de {ctx.author.name}")
+        
+        # Permitir sempre os comandos relacionados à ativação
+        allowed_commands = ['ativar', 'status', 'ajuda', 'help']
+        
+        # Se o comando não estiver na lista de permitidos e o bot estiver inativo, cancelar
+        if ctx.command.name not in allowed_commands and not self.is_active:
+            logger.info(f"Comando !{ctx.command.name} bloqueado - bot inativo")
+            embed = discord.Embed(
+                title="⚠️ Bot Inativo",
+                description="O bot está desativado no momento.",
+                color=discord.Color.orange()
+            )
+            embed.add_field(
+                name="Como ativar",
+                value=self.get_activation_message(),
+                inline=False
+            )
+            
+            await ctx.send(embed=embed)
+            # Indicar que o comando não deve prosseguir
+            ctx.command.reset_cooldown(ctx)
+            raise commands.CommandError("Bot inativo")
+            
+    # Adicionar listener para mensagens - depuração e ativação especial
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        """Monitora mensagens para depuração e ativa o bot com palavras-chave específicas"""
+        # Ignorar mensagens do próprio bot
+        if message.author == self.bot.user:
+            return
+            
+        # Log apenas se a mensagem começar com o prefixo de comando
+        if message.content.startswith('!'):
+            logger.info(f"Mensagem com prefixo '!' recebida: {message.content} de {message.author.name}")
+            
+        # Detectar palavras-chave para ativação sem prefixo
+        content_lower = message.content.lower()
+        if content_lower == "ativar" or content_lower == "ativar bot" or content_lower == "bot ativar" or "python ativar_bot.py" in content_lower:
+            logger.info(f"Comando de ativação sem prefixo detectado: {message.content} de {message.author.name}")
+            # Criar um contexto falso para passar para activate_bot
+            ctx = await self.bot.get_context(message)
+            await self.activate_bot(ctx)
+
+    def load_settings(self):
+        """Carrega as configurações personalizadas do arquivo"""
+        try:
+            if os.path.exists(self.settings_file):
+                with open(self.settings_file, 'r') as f:
+                    settings = json.load(f)
+                    # Extrair a duração (em segundos) das configurações
+                    if 'duration' in settings:
+                        self.activation_duration = settings['duration']
+                        logger.info(f"Carregada duração personalizada: {self.activation_duration} segundos")
+            else:
+                # Se o arquivo não existir, criar um com as configurações padrão
+                self.save_settings()
+        except Exception as e:
+            logger.error(f"Erro ao carregar configurações: {e}")
+            # Em caso de erro, usar a duração padrão
+            self.activation_duration = self.default_duration
+    
+    def save_settings(self):
+        """Salva as configurações personalizadas no arquivo"""
+        try:
+            settings = {
+                'duration': self.activation_duration
+            }
+            with open(self.settings_file, 'w') as f:
+                json.dump(settings, f, indent=4)
+            logger.info(f"Configurações salvas: duração = {self.activation_duration} segundos")
+        except Exception as e:
+            logger.error(f"Erro ao salvar configurações: {e}")
+    
+    @commands.command(name="definir_duracao")
+    @commands.has_permissions(administrator=True)
+    async def set_duration(self, ctx, horas: int):
+        """Define a duração da ativação do bot (requer permissões de administrador)"""
+        if horas < 1 or horas > 12:
+            await ctx.send("⚠️ A duração deve estar entre 1 e 12 horas.")
+            return
+        
+        # Converter horas para segundos
+        self.activation_duration = horas * 3600
+        
+        # Salvar a nova configuração
+        self.save_settings()
+        
+        # Informar o usuário
+        embed = discord.Embed(
+            title="⏱️ Duração Atualizada",
+            description=f"A duração de ativação do bot foi alterada para {horas} hora{'s' if horas > 1 else ''}.",
+            color=discord.Color.blue()
+        )
+        embed.add_field(
+            name="Próxima ativação",
+            value="Esta configuração será aplicada na próxima vez que o bot for ativado.",
+            inline=False
+        )
+        if self.is_active:
+            # Calcular tempo restante da ativação atual
+            elapsed = (datetime.datetime.now() - self.activation_time).total_seconds()
+            remaining = max(0, self.activation_duration - elapsed)
+            hours, remainder = divmod(int(remaining), 3600)
+            minutes, seconds = divmod(remainder, 60)
+            
+            time_str = ""
+            if hours > 0:
+                time_str += f"{hours} hora{'s' if hours > 1 else ''} "
+            if minutes > 0 or hours > 0:
+                time_str += f"{minutes} minuto{'s' if minutes != 1 else ''} "
+            time_str += f"{seconds} segundo{'s' if seconds != 1 else ''}"
+            
+            embed.add_field(
+                name="Ativação atual",
+                value=f"O bot continuará ativo pelo tempo restante da ativação atual: {time_str}",
+                inline=False
+            )
+        
+        await ctx.send(embed=embed)
+        logger.info(f"Duração de ativação alterada para {horas} horas por {ctx.author.name}")
+        
+    @set_duration.error
+    async def set_duration_error(self, ctx, error):
+        """Tratamento de erros para o comando definir_duracao"""
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send("⛔ Você precisa ter permissões de administrador para alterar a duração de ativação.")
+        elif isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send("⚠️ Uso correto: `!definir_duracao <horas>` (entre 1 e 12 horas)")
+        elif isinstance(error, commands.BadArgument):
+            await ctx.send("⚠️ O valor informado deve ser um número inteiro de horas (entre 1 e 12)")
+        else:
+            await ctx.send(f"❌ Erro ao definir duração: {str(error)}")
+            logger.error(f"Erro ao definir duração: {error}")
+
+    def get_duration_display_text(self):
+        """Retorna uma string formatada com a duração configurada"""
+        duracao_horas = round(self.activation_duration / 3600)
+        return f"{duracao_horas} hora{'s' if duracao_horas > 1 else ''}"
+    
+    def get_activation_message(self):
+        """Retorna a mensagem para ativação do bot"""
+        return f"Use o comando `!ativar` para ativar o bot por {self.get_duration_display_text()}."
+
+async def setup(bot):
+    """Adiciona o cog ao bot"""
+    await bot.add_cog(Activation(bot))

@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Script autônomo SOMENTE para iniciar o bot Discord (sem qualquer importação do Flask)
+import os
+import sys
+import asyncio
+import logging
+from pathlib import Path
+import discord
+from discord.ext import commands
+from dotenv import load_dotenv
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger('discord_bot')
+
+# Garantir que os diretórios de áudio existam
+def ensure_directories_exist():
+    Path('audios/originais').mkdir(parents=True, exist_ok=True)
+    Path('audios/editados').mkdir(parents=True, exist_ok=True)
+
+# Load environment variables
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
+# Main function
+def main():
+    ensure_directories_exist()
+    
+    if not TOKEN:
+        logger.error("DISCORD_TOKEN não encontrado. Defina a variável de ambiente DISCORD_TOKEN.")
+        sys.exit(1)
+    
+    # Setup
+    intents = discord.Intents.default()
+    intents.message_content = True
+    bot = commands.Bot(command_prefix="!", intents=intents)
+    
+    # Bot events
+    @bot.event
+    async def on_ready():
+        logger.info(f"{bot.user.name} has connected to Discord!")
+        await load_cogs(bot)
+    
+    # Help command
+    @bot.command(name='ajuda')
+    async def help_command(ctx):
+        """Displays help information about the bot's commands"""
+        embed = discord.Embed(
+            title="📋 Comandos do Bot de Sons",
+            description="Aqui estão todos os comandos disponíveis:",
+            color=discord.Color.blue()
+        )
+        
+        # Player commands
+        embed.add_field(
+            name="🎵 Comandos de Reprodução",
+            value=(
+                "`!tocar <arquivo>` - Reproduz um arquivo de áudio\n"
+                "`!pausar` - Pausa a reprodução atual\n"
+                "`!continuar` - Continua uma reprodução pausada\n"
+                "`!parar` - Para a reprodução e desconecta\n"
+                "`!listar` - Mostra todos os áudios disponíveis em um menu\n"
+                "`!carousel` - Mostra um carrossel interativo de áudios"
+            ),
+            inline=False
+        )
+        
+        # Storage commands
+        embed.add_field(
+            name="📂 Comandos de Armazenamento",
+            value=(
+                "`!upload` - Faz upload de um arquivo de áudio (anexe o arquivo ao comando)"
+            ),
+            inline=False
+        )
+        
+        # Editor commands
+        embed.add_field(
+            name="✂️ Comandos de Edição",
+            value=(
+                "`!cortar <arquivo> <inicio> <fim>` - Corta um arquivo de áudio (formato de tempo: HH:MM:SS)\n"
+                "`!inverter <arquivo>` - Inverte um arquivo de áudio\n"
+                "`!velocidade <arquivo> <fator>` - Altera a velocidade (0.5=lento, 2.0=rápido)"
+            ),
+            inline=False
+        )
+        
+        embed.set_footer(text="Bot de Sons • Use !ajuda para ver esta mensagem novamente")
+        await ctx.send(embed=embed)
+    
+    # Error handling
+    @bot.event
+    async def on_command_error(ctx, error):
+        if isinstance(error, commands.CommandNotFound):
+            await ctx.send("❌ Comando não encontrado. Use `!ajuda` para ver a lista de comandos.")
+        elif isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send(f"❌ Argumento obrigatório ausente: `{error.param.name}`. Use `!ajuda` para ver o uso correto.")
+        elif isinstance(error, commands.BadArgument):
+            await ctx.send("❌ Argumento inválido. Verifique o tipo e formato do argumento.")
+        else:
+            logger.error(f"Command error: {error}")
+            await ctx.send(f"❌ Ocorreu um erro: {error}")
+    
+    # Execute o bot
+    try:
+        logger.info("Starting Discord bot...")
+        asyncio.run(bot.start(TOKEN))
+    except Exception as e:
+        logger.error(f"Erro ao iniciar o bot: {e}")
+        sys.exit(1)
+
+# Load cogs
+async def load_cogs(bot):
+    """Load all cogs for the bot"""
+    cogs_dir = Path('./cogs')
+    for cog_file in cogs_dir.glob('*.py'):
+        try:
+            await bot.load_extension(f'cogs.{cog_file.stem}')
+            logger.info(f"Loaded cog: {cog_file.name}")
+        except Exception as e:
+            logger.error(f"Failed to load cog {cog_file.name}: {e}")
+
+# Verificar se estamos sendo executados como comando principal
+if __name__ == "__main__":
+    print("Iniciando o bot Discord (somente bot, sem Flask)...")
+    main()

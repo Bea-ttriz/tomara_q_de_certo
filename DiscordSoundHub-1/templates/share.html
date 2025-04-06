@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block title %}Compartilhar "{{ audio.nome }}" - Gerenciador de Áudios{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Início</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('view_audio', name=audio.nome) }}">{{ audio.nome }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Compartilhar</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="bi bi-share"></i> Compartilhar Áudio</h3>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        {% if audio.emoji %}
+                        <div class="display-1 mb-3">{{ audio.emoji }}</div>
+                        {% else %}
+                        <div class="display-1 mb-3">🔊</div>
+                        {% endif %}
+                        <h2>{{ audio.nome }}</h2>
+                        <p class="text-muted">
+                            Duração: {{ (audio.duracao / 1000)|round|int // 60 }}:{{ '%02d' % ((audio.duracao / 1000)|round|int % 60) }}
+                            <span class="badge {% if audio.tipo == 'original' %}bg-success{% else %}bg-info{% endif %}">
+                                {{ audio.tipo|capitalize }}
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Link para compartilhar:</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="shareUrl" value="{{ share_url }}" readonly>
+                            <button class="btn btn-outline-primary" type="button" onclick="copyToClipboard('shareUrl')">
+                                <i class="bi bi-clipboard"></i> Copiar
+                            </button>
+                        </div>
+                        <small class="form-text text-muted">
+                            Compartilhe este link para que outras pessoas possam acessar este áudio.
+                        </small>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Comando para Discord:</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="discordCommand" value="!tocar {{ audio.nome }}" readonly>
+                            <button class="btn btn-outline-primary" type="button" onclick="copyToClipboard('discordCommand')">
+                                <i class="bi bi-clipboard"></i> Copiar
+                            </button>
+                        </div>
+                        <small class="form-text text-muted">
+                            Use este comando no Discord para reproduzir este áudio.
+                        </small>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i> O bot precisa estar ativo no Discord para reproduzir áudios.
+                        Se o bot estiver desativado, use o comando <code>!ativar</code> antes.
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="{{ url_for('view_audio', name=audio.nome) }}" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Voltar
+                        </a>
+                        <button class="btn btn-primary" onclick="window.open('https://discord.com/app', '_blank')">
+                            <i class="bi bi-discord"></i> Abrir Discord
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="bi bi-music-note-list"></i> Visualizar Áudio</h4>
+                </div>
+                <div class="card-body">
+                    <div class="audio-controls">
+                        <audio controls class="w-100">
+                            <source src="{{ url_for('get_audio', name=audio.nome) }}" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function copyToClipboard(elementId) {
+        const element = document.getElementById(elementId);
+        element.select();
+        document.execCommand('copy');
+        
+        // Mostrar feedback visual
+        const button = event.currentTarget;
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="bi bi-check"></i> Copiado!';
+        button.classList.remove('btn-outline-primary');
+        button.classList.add('btn-success');
+        
+        setTimeout(() => {
+            button.innerHTML = originalText;
+            button.classList.remove('btn-success');
+            button.classList.add('btn-outline-primary');
+        }, 2000);
+    }
+</script>
+{% endblock %}

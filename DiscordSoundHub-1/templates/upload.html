@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload de Áudio - Gerenciador de Áudios{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0"><i class="bi bi-cloud-upload"></i> Upload de Áudio</h4>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('upload_audio') }}" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="audio_file" class="form-label">Arquivo de Áudio</label>
+                        <input type="file" class="form-control" id="audio_file" name="audio_file" accept="audio/*" required>
+                        <div class="form-text">Formatos suportados: MP3, WAV, OGG, M4A</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome do Áudio</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome para identificar o áudio">
+                        <div class="form-text">Se não for especificado, será usado o nome do arquivo</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="emoji" class="form-label">Emoji (opcional)</label>
+                        <input type="text" class="form-control custom-emoji-input" id="emoji" name="emoji" maxlength="2" placeholder="🎵">
+                        <div class="form-text">Associe um emoji para facilitar a identificação no Discord</div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="text-end">
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary me-2">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-cloud-upload"></i> Enviar Áudio
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <div class="alert alert-info">
+                <h5><i class="bi bi-info-circle"></i> Dicas:</h5>
+                <ul>
+                    <li>Recomendamos arquivos MP3 para melhor compatibilidade.</li>
+                    <li>Áudios grandes podem demorar mais para processar.</li>
+                    <li>O nome do áudio será usado nos comandos do bot Discord.</li>
+                    <li>Você poderá editar o arquivo depois de enviá-lo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Pré-visualização do nome do arquivo
+    document.addEventListener('DOMContentLoaded', function() {
+        const fileInput = document.getElementById('audio_file');
+        const nomeInput = document.getElementById('nome');
+        
+        fileInput.addEventListener('change', function() {
+            if (this.files && this.files[0] && !nomeInput.value) {
+                // Extrair o nome do arquivo sem a extensão
+                const fileName = this.files[0].name;
+                const fileNameWithoutExt = fileName.split('.').slice(0, -1).join('.');
+                nomeInput.value = fileNameWithoutExt;
+            }
+        });
+    });
+</script>
+{% endblock %}

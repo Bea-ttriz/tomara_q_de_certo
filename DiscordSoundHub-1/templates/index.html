@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}Início - Gerenciador de Áudios{% endblock %}
+
+{% block content %}
+<h1 class="mb-4"><i class="bi bi-music-note-list"></i> Biblioteca de Áudios</h1>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar áudios...">
+        </div>
+    </div>
+    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+        <a href="{{ url_for('upload_audio') }}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Adicionar Áudio
+        </a>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-secondary active" data-filter="all">Todos</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="original">Originais</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="editado">Editados</button>
+        </div>
+    </div>
+</div>
+
+{% if audios %}
+<div class="row" id="audioGrid">
+    {% for audio in audios %}
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 audio-item" data-type="{{ audio.tipo }}">
+        <div class="card h-100 audio-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                {% if audio.emoji %}
+                <span class="emoji-display">{{ audio.emoji }}</span>
+                {% else %}
+                <span class="emoji-display">🔊</span>
+                {% endif %}
+                <span class="badge {% if audio.tipo == 'original' %}bg-success{% else %}bg-info{% endif %}">
+                    {{ audio.tipo|capitalize }}
+                </span>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{{ url_for('view_audio', name=audio.nome) }}" class="text-decoration-none">{{ audio.nome }}</a>
+                </h5>
+                <p class="card-text">
+                    <small class="text-muted">
+                        Duração: {{ audio.duracao|default(0)|int//1000//60 }}:{{ '%02d'|format(audio.duracao|default(0)|int//1000%60) }}
+                    </small>
+                </p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" onclick="playAudio('{{ url_for('get_audio', name=audio.nome) }}')">
+                        <i class="bi bi-play-fill"></i> Reproduzir
+                    </button>
+                    <div class="btn-group">
+                        <a href="{{ url_for('view_audio', name=audio.nome) }}" class="btn btn-outline-info">
+                            <i class="bi bi-info-circle"></i> Detalhes
+                        </a>
+                        <a href="{{ url_for('edit_audio', name=audio.nome) }}" class="btn btn-outline-secondary">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <form action="{{ url_for('delete_audio', name=audio.nome) }}" method="post" class="d-inline"
+                      onsubmit="return confirm('Tem certeza que deseja excluir o áudio \'{{ audio.nome }}\'?');">
+                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-info">
+    <i class="bi bi-info-circle"></i> Nenhum áudio encontrado. <a href="{{ url_for('upload_audio') }}">Adicione um áudio</a> para começar.
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Filtro de áudios
+    document.addEventListener('DOMContentLoaded', function() {
+        // Botões de filtro
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove a classe ativa de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adiciona a classe ativa ao botão clicado
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const audioItems = document.querySelectorAll('.audio-item');
+                
+                audioItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.type === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Busca de áudios
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const audioItems = document.querySelectorAll('.audio-item');
+            
+            audioItems.forEach(item => {
+                const audioName = item.querySelector('.card-title').textContent.toLowerCase();
+                if (audioName.includes(searchTerm)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

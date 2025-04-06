@@ -1,0 +1,962 @@
+2025-03-27 01:44:17,930 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 01:44:17,930 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 01:44:17,931 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 01:44:17,932 - discord.client - INFO - logging in using static token
+2025-03-27 01:44:18,666 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: afdd62d9ea639ffbb736713ff0e445ce).
+2025-03-27 01:44:20,670 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 01:44:20,670 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 01:44:20,670 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 01:44:20,677 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 01:44:20,678 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 01:44:20,678 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 01:44:20,679 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 01:44:20,680 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 01:44:27,679 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 01:44:27,679 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 01:44:27,680 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 01:44:27,680 - discord.client - INFO - logging in using static token
+2025-03-27 01:44:28,156 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: ebb4509e5173ea1e2f0cea1e45d95a6f).
+2025-03-27 01:44:30,170 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 01:44:30,170 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 01:44:30,170 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 01:44:30,176 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 01:44:30,177 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 01:44:30,178 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 01:44:30,179 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 01:44:30,179 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:22:30,284 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:22:30,286 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:22:30,287 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:22:30,288 - discord.client - INFO - logging in using static token
+2025-03-27 23:22:30,899 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 009f13b9f995a9bcaab5a02b4d4e5a11).
+2025-03-27 23:22:32,903 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:22:32,903 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:22:32,903 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:22:32,917 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:22:32,919 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:22:32,923 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:22:32,925 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:22:32,925 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:26:36,228 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:26:36,229 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:26:36,230 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:26:36,230 - discord.client - INFO - logging in using static token
+2025-03-27 23:26:36,702 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 668d4ad687f661439300aecbe2a01e47).
+2025-03-27 23:26:38,707 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:26:38,707 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:26:38,707 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:26:38,713 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:26:38,715 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:26:38,716 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:26:38,722 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:26:38,722 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:26:38,722 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:26:38,722 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:26:41,934 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-03-27 23:26:41,934 - discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-03-27 23:26:41,935 - discord.voice_state - INFO - Connecting to voice...
+2025-03-27 23:26:41,935 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-03-27 23:26:42,449 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11076.discord.media
+2025-03-27 23:26:43,412 - discord.voice_state - INFO - Voice connection complete.
+2025-03-27 23:26:43,412 - discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-03-27 23:26:43,412 - discord_bot.player - INFO - Tentando reproduzir áudio: agora_deu_o_carai de audios/originais/agora_deu_o_carai.mp3
+2025-03-27 23:26:43,412 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-03-27 23:26:43,413 - discord_bot.player - INFO - FFMPEG path: /nix/store/jfybfbnknyiwggcrhi4v9rsx5g4hksvf-ffmpeg-full-6.1.1-bin/bin/ffmpeg
+2025-03-27 23:26:43,611 - discord_bot.player - ERROR - Erro específico ao criar fonte de áudio: 
+2025-03-27 23:26:43,612 - discord_bot.player - INFO - Tentando abordagem alternativa...
+2025-03-27 23:26:43,693 - discord_bot.player - ERROR - Erro ao reproduzir áudio: 
+2025-03-27 23:26:43,695 - discord_bot.player - ERROR - Traceback: Traceback (most recent call last):
+  File "/home/runner/workspace/cogs/player.py", line 189, in play_audio
+    voice_client.play(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 506, in play
+    self.encoder = opus.Encoder(
+                   ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 359, in __init__
+    _OpusStruct.get_opus_version()  # lazy loads the opus library
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 332, in get_opus_version
+    raise OpusNotLoaded()
+discord.opus.OpusNotLoaded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/cogs/player.py", line 199, in play_audio
+    voice_client.play(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 506, in play
+    self.encoder = opus.Encoder(
+                   ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 359, in __init__
+    _OpusStruct.get_opus_version()  # lazy loads the opus library
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 332, in get_opus_version
+    raise OpusNotLoaded()
+discord.opus.OpusNotLoaded
+
+2025-03-27 23:26:43,930 - discord.player - INFO - ffmpeg process 638 has not terminated. Waiting to terminate...
+2025-03-27 23:26:43,935 - discord.player - INFO - ffmpeg process 638 should have terminated with a return code of -9.
+2025-03-27 23:26:43,935 - discord.player - INFO - ffmpeg process 656 has not terminated. Waiting to terminate...
+2025-03-27 23:26:43,950 - discord.player - INFO - ffmpeg process 656 should have terminated with a return code of -9.
+2025-03-27 23:26:48,318 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:26:48,318 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:26:48,319 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:26:48,320 - discord.client - INFO - logging in using static token
+2025-03-27 23:26:48,800 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 50b076b1438929f9ff0a91164e6f539f).
+2025-03-27 23:26:50,819 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:26:50,819 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:26:50,819 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:26:50,827 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:26:50,828 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:26:50,829 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:26:50,831 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:26:50,832 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:26:50,832 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:26:50,832 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:31:48,044 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-03-27 23:31:48,044 - discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-03-27 23:31:48,044 - discord.voice_state - INFO - Connecting to voice...
+2025-03-27 23:31:48,045 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-03-27 23:31:48,199 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11076.discord.media
+2025-03-27 23:31:49,048 - discord.voice_state - INFO - Voice connection complete.
+2025-03-27 23:31:49,048 - discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-03-27 23:31:49,048 - discord_bot.player - INFO - Tentando reproduzir áudio: agora_deu_o_carai de audios/originais/agora_deu_o_carai.mp3
+2025-03-27 23:31:49,048 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-03-27 23:31:49,049 - discord_bot.player - INFO - FFMPEG path: /nix/store/jfybfbnknyiwggcrhi4v9rsx5g4hksvf-ffmpeg-full-6.1.1-bin/bin/ffmpeg
+2025-03-27 23:31:49,141 - discord_bot.player - ERROR - Erro específico ao criar fonte de áudio: 
+2025-03-27 23:31:49,143 - discord_bot.player - INFO - Tentando abordagem alternativa...
+2025-03-27 23:31:49,232 - discord_bot.player - ERROR - Erro ao reproduzir áudio: 
+2025-03-27 23:31:49,234 - discord_bot.player - ERROR - Traceback: Traceback (most recent call last):
+  File "/home/runner/workspace/cogs/player.py", line 189, in play_audio
+    voice_client.play(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 506, in play
+    self.encoder = opus.Encoder(
+                   ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 359, in __init__
+    _OpusStruct.get_opus_version()  # lazy loads the opus library
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 332, in get_opus_version
+    raise OpusNotLoaded()
+discord.opus.OpusNotLoaded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/cogs/player.py", line 199, in play_audio
+    voice_client.play(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 506, in play
+    self.encoder = opus.Encoder(
+                   ^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 359, in __init__
+    _OpusStruct.get_opus_version()  # lazy loads the opus library
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/opus.py", line 332, in get_opus_version
+    raise OpusNotLoaded()
+discord.opus.OpusNotLoaded
+
+2025-03-27 23:31:49,482 - discord.player - INFO - ffmpeg process 852 has not terminated. Waiting to terminate...
+2025-03-27 23:31:49,520 - discord.player - INFO - ffmpeg process 852 should have terminated with a return code of -9.
+2025-03-27 23:31:49,521 - discord.player - INFO - ffmpeg process 870 has not terminated. Waiting to terminate...
+2025-03-27 23:31:49,522 - discord.player - INFO - ffmpeg process 870 should have terminated with a return code of -9.
+2025-03-27 23:33:47,288 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:33:47,385 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,404 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,422 - discord_bot - WARNING - Falha ao carregar Opus com libopus.so.0: libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,478 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,497 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,531 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,531 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,531 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:33:47,531 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-03-27 23:33:47,532 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-03-27 23:33:47,532 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:33:47,533 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:33:47,533 - discord.client - INFO - logging in using static token
+2025-03-27 23:33:48,264 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0bb40a05f6aa431efd0c50aa7371b8eb).
+2025-03-27 23:33:50,269 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:33:50,269 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:33:50,269 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:33:50,275 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:33:50,276 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:33:50,277 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:33:50,284 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:33:50,284 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:33:50,284 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:33:50,285 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:34:53,327 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:34:53,426 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,427 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,428 - discord_bot - WARNING - Falha ao carregar Opus com libopus.so.0: libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,428 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,429 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,429 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,429 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,430 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:34:53,430 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-03-27 23:34:53,430 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-03-27 23:34:53,430 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:34:53,431 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:34:53,431 - discord.client - INFO - logging in using static token
+2025-03-27 23:34:53,936 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 59cd805a9e233f2e233c5918db0cd773).
+2025-03-27 23:34:55,941 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:34:55,941 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:34:55,941 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:34:55,947 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:34:55,948 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:34:55,949 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:34:55,951 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:34:55,952 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:34:55,952 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:34:55,952 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:35:09,820 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:35:09,969 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,969 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,972 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,973 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,974 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,974 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,974 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:35:09,974 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-03-27 23:35:09,974 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-03-27 23:35:09,974 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:35:09,975 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:35:09,976 - discord.client - INFO - logging in using static token
+2025-03-27 23:35:10,475 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 23e385bfd6ba4e84a502d9cc638a852a).
+2025-03-27 23:35:12,478 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:35:12,478 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:35:12,478 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:35:12,492 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:35:12,493 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:35:12,494 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:35:12,495 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:35:12,496 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:35:12,496 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:35:12,496 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:35:53,900 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:35:53,995 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,995 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,996 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,997 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,997 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,997 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:35:53,997 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:35:54,019 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-03-27 23:35:54,034 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-03-27 23:35:54,035 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-03-27 23:35:54,035 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:35:54,036 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:35:54,036 - discord.client - INFO - logging in using static token
+2025-03-27 23:35:54,522 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: aee01910b021ce4414816e5dad7a3941).
+2025-03-27 23:35:56,531 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:35:56,531 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:35:56,532 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:35:56,538 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:35:56,540 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:35:56,541 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:35:56,543 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:35:56,543 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:35:56,543 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:35:56,543 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-03-27 23:36:19,632 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-03-27 23:36:19,721 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,721 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,722 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,723 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,723 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,723 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,723 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-03-27 23:36:19,724 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-03-27 23:36:19,725 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-03-27 23:36:19,725 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-03-27 23:36:19,725 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-03-27 23:36:19,726 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-03-27 23:36:19,727 - discord.client - INFO - logging in using static token
+2025-03-27 23:36:20,602 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2d538c733437834c70560e4572c94317).
+2025-03-27 23:36:22,606 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-03-27 23:36:22,606 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-03-27 23:36:22,607 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-03-27 23:36:22,613 - discord_bot - INFO - Cog carregada: storage.py
+2025-03-27 23:36:22,614 - discord_bot - INFO - Cog carregada: editor.py
+2025-03-27 23:36:22,615 - discord_bot - INFO - Cog carregada: ui.py
+2025-03-27 23:36:22,617 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-03-27 23:36:22,617 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-03-27 23:36:22,618 - discord_bot - INFO - Cog carregada: player.py
+2025-03-27 23:36:22,618 - discord_bot - INFO - Cogs carregadas: 4, Falhas: 0
+2025-04-02 01:33:05,246 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-04-02 01:33:05,782 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,799 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,837 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,856 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,873 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,881 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,881 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-04-02 01:33:05,904 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-04-02 01:33:05,932 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-04-02 01:33:05,933 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-04-02 01:33:05,933 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-04-02 01:33:05,934 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-04-02 01:33:05,934 - discord.client - INFO - logging in using static token
+2025-04-02 01:33:11,550 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b4cf5a00a31bdbe2dfc72b5e35ac08e1).
+2025-04-02 01:33:13,553 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-04-02 01:33:13,554 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-04-02 01:33:13,554 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-04-02 01:33:13,571 - discord_bot - INFO - Cog carregada: storage.py
+2025-04-02 01:33:13,574 - discord_bot - INFO - Cog carregada: ui.py
+2025-04-02 01:33:13,578 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-02 01:33:13,578 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-02 01:33:13,579 - discord_bot - INFO - Cog carregada: player.py
+2025-04-02 01:33:13,587 - discord_bot - INFO - Cog carregada: editor.py
+2025-04-02 01:33:13,592 - discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-02 01:33:13,593 - discord_bot - INFO - Cog carregada: activation.py
+2025-04-02 01:33:13,593 - discord_bot - INFO - Cogs carregadas: 5, Falhas: 0
+2025-04-02 01:33:16,881 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-04-02 01:33:17,813 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,819 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,825 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,832 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,835 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,841 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,843 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-04-02 01:33:17,852 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-04-02 01:33:17,854 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-04-02 01:33:17,855 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-04-02 01:33:17,856 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-04-02 01:33:17,857 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-04-02 01:33:17,858 - discord.client - INFO - logging in using static token
+2025-04-02 01:33:18,737 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 99d259b108f2d228fb160195a957a446).
+2025-04-02 01:33:20,745 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-04-02 01:33:20,747 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-04-02 01:33:20,748 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-04-02 01:33:20,766 - discord_bot - INFO - Cog carregada: storage.py
+2025-04-02 01:33:20,767 - discord_bot - INFO - Cog carregada: ui.py
+2025-04-02 01:33:20,768 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-02 01:33:20,773 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-02 01:33:20,774 - discord_bot - INFO - Cog carregada: player.py
+2025-04-02 01:33:20,775 - discord_bot - INFO - Cog carregada: editor.py
+2025-04-02 01:33:20,776 - discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-02 01:33:20,776 - discord_bot - INFO - Cog carregada: activation.py
+2025-04-02 01:33:20,776 - discord_bot - INFO - Cogs carregadas: 5, Falhas: 0
+2025-04-02 01:35:26,229 - discord_bot.activation - INFO - Bot ativado por bea__triz no servidor rivoTRIO
+2025-04-02 01:35:56,437 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 01:35:56,437 - discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-04-02 01:35:56,437 - discord.voice_state - INFO - Connecting to voice...
+2025-04-02 01:35:56,437 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-04-02 01:35:56,588 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11017.discord.media
+2025-04-02 01:35:57,467 - discord.voice_state - INFO - Voice connection complete.
+2025-04-02 01:35:57,468 - discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-04-02 01:35:57,468 - discord_bot.player - INFO - Tentando reproduzir áudio: agora_deu_o_carai de audios/originais/agora_deu_o_carai.mp3
+2025-04-02 01:35:57,468 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 01:35:57,468 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 01:35:57,469 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 01:35:57,738 - discord_bot.player - INFO - Reprodução iniciada com sucesso: agora_deu_o_carai
+2025-04-02 01:36:04,108 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 01:36:04,111 - discord.player - INFO - ffmpeg process 599 successfully terminated with return code of 0.
+2025-04-02 01:37:47,274 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 01:37:47,274 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-02 01:37:47,274 - discord_bot.player - INFO - Tentando reproduzir áudio: de_novo_nao de audios/originais/de_novo_nao.mp3
+2025-04-02 01:37:47,276 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 01:37:47,276 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 01:37:47,277 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 01:37:47,500 - discord_bot.player - INFO - Reprodução iniciada com sucesso: de_novo_nao
+2025-04-02 01:38:03,622 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 01:38:03,623 - discord.player - INFO - ffmpeg process 631 successfully terminated with return code of 0.
+2025-04-02 02:06:37,830 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 02:06:37,834 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-02 02:06:37,834 - discord_bot.player - INFO - Tentando reproduzir áudio: among-us de audios/originais/among-us.mp3
+2025-04-02 02:06:37,834 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 02:06:37,835 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 02:06:37,835 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 02:06:38,041 - discord_bot.player - INFO - Reprodução iniciada com sucesso: among-us
+2025-04-02 02:06:42,426 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 02:06:42,427 - discord.player - INFO - ffmpeg process 1657 successfully terminated with return code of 0.
+2025-04-02 02:06:43,904 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 02:06:43,904 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-02 02:06:43,904 - discord_bot.player - INFO - Tentando reproduzir áudio: bob_esponja_triste de audios/originais/bob_esponja_triste.mp3
+2025-04-02 02:06:43,904 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 02:06:43,904 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 02:06:43,904 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 02:06:44,024 - discord_bot.player - INFO - Reprodução iniciada com sucesso: bob_esponja_triste
+2025-04-02 02:06:47,310 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 02:06:47,311 - discord.player - INFO - ffmpeg process 1668 successfully terminated with return code of 0.
+2025-04-02 02:06:51,591 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 02:06:51,605 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-02 02:06:51,615 - discord_bot.player - INFO - Tentando reproduzir áudio: ngm_vai_pegar_meu_telefone de audios/originais/ngm_vai_pegar_meu_telefone.mp3
+2025-04-02 02:06:51,615 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 02:06:51,615 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 02:06:51,616 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 02:06:51,859 - discord_bot.player - INFO - Reprodução iniciada com sucesso: ngm_vai_pegar_meu_telefone
+2025-04-02 02:06:56,212 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 02:06:56,212 - discord.player - INFO - ffmpeg process 1679 successfully terminated with return code of 0.
+2025-04-02 02:07:01,003 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-02 02:07:01,003 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-02 02:07:01,003 - discord_bot.player - INFO - Tentando reproduzir áudio: gato_rindo_estourado de audios/originais/gato_rindo_estourado.mp3
+2025-04-02 02:07:01,003 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-02 02:07:01,004 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-02 02:07:01,004 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-02 02:07:01,167 - discord_bot.player - INFO - Reprodução iniciada com sucesso: gato_rindo_estourado
+2025-04-02 02:07:04,648 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-02 02:07:04,652 - discord.player - INFO - ffmpeg process 1690 successfully terminated with return code of 0.
+2025-04-03 00:23:44,598 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-04-03 00:23:45,250 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,263 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,288 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,297 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,308 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,308 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,309 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-04-03 00:23:45,329 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-04-03 00:23:45,384 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-04-03 00:23:45,384 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-04-03 00:23:45,384 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-04-03 00:23:45,385 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-04-03 00:23:45,386 - discord.client - INFO - logging in using static token
+2025-04-03 00:23:45,961 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c490f367b20fe63376b6f104c5798d0e).
+2025-04-03 00:23:47,965 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-04-03 00:23:47,965 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-04-03 00:23:47,966 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-04-03 00:23:47,996 - discord_bot - INFO - Cog carregada: storage.py
+2025-04-03 00:23:48,000 - discord_bot - INFO - Cog carregada: ui.py
+2025-04-03 00:23:48,004 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-03 00:23:48,004 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-03 00:23:48,005 - discord_bot - INFO - Cog carregada: player.py
+2025-04-03 00:23:48,008 - discord_bot - INFO - Cog carregada: editor.py
+2025-04-03 00:23:48,009 - discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-03 00:23:48,010 - discord_bot - INFO - Cog carregada: activation.py
+2025-04-03 00:23:48,010 - discord_bot - INFO - Cogs carregadas: 5, Falhas: 0
+2025-04-03 00:24:59,473 - discord_bot - INFO - Iniciando configuração do Bot Discord...
+2025-04-03 00:24:59,596 - discord_bot - WARNING - Falha ao carregar Opus com opus: opus: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,598 - discord_bot - WARNING - Falha ao carregar Opus com libopus: libopus: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,599 - discord_bot - WARNING - Falha ao carregar Opus com libopus-0.dll: libopus-0.dll: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,600 - discord_bot - WARNING - Falha ao carregar Opus com libopus.0.dylib: libopus.0.dylib: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,600 - discord_bot - WARNING - Falha ao carregar Opus com /usr/local/lib/libopus.so: /usr/local/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,600 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so: /usr/lib/libopus.so: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,601 - discord_bot - WARNING - Falha ao carregar Opus com /usr/lib/libopus.so.0: /usr/lib/libopus.so.0: cannot open shared object file: No such file or directory
+2025-04-03 00:24:59,609 - discord_bot - INFO - LD_LIBRARY_PATH atualizado para: /mnt/nixmodules/nix/store/8000ndhxf2ppjw91r3r25dr9yhvjgy8w-libopus-1.5.2/lib:
+2025-04-03 00:24:59,612 - discord_bot - WARNING - Não foi possível carregar Opus diretamente. Discord usará PyNaCl sem otimização.
+2025-04-03 00:24:59,613 - discord_bot - INFO - Status de carregamento Opus: Falha
+2025-04-03 00:24:59,613 - discord_bot.database - INFO - Banco de dados encontrado em audios/audios_db.json
+2025-04-03 00:24:59,614 - discord_bot - INFO - Iniciando o Bot Discord...
+2025-04-03 00:24:59,614 - discord.client - INFO - logging in using static token
+2025-04-03 00:25:00,163 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 551ddaa1c37489982f0fc268899597e8).
+2025-04-03 00:25:02,171 - discord_bot - INFO - bot_de_sons conectado ao Discord!
+2025-04-03 00:25:02,171 - discord_bot - INFO - ID do Bot: 1350620830358573129
+2025-04-03 00:25:02,171 - discord_bot - INFO - Conectado a 1 servidores: rivoTRIO
+2025-04-03 00:25:02,179 - discord_bot - INFO - Cog carregada: storage.py
+2025-04-03 00:25:02,180 - discord_bot - INFO - Cog carregada: ui.py
+2025-04-03 00:25:02,182 - discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-03 00:25:02,183 - discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-03 00:25:02,183 - discord_bot - INFO - Cog carregada: player.py
+2025-04-03 00:25:02,184 - discord_bot - INFO - Cog carregada: editor.py
+2025-04-03 00:25:02,188 - discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-03 00:25:02,190 - discord_bot - INFO - Cog carregada: activation.py
+2025-04-03 00:25:02,191 - discord_bot - INFO - Cogs carregadas: 5, Falhas: 0
+2025-04-03 00:25:11,778 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !status de bea__triz
+2025-04-03 00:25:11,778 - discord_bot.activation - INFO - Comando detectado: !status de bea__triz
+2025-04-03 00:25:23,550 - discord_bot.activation - INFO - Comando !ativar recebido de bea__triz no servidor rivoTRIO
+2025-04-03 00:25:23,551 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !ativar de bea__triz
+2025-04-03 00:25:23,551 - discord_bot.activation - INFO - Comando detectado: !ativar de bea__triz
+2025-04-03 00:25:24,048 - discord_bot.activation - INFO - Bot ativado por bea__triz no servidor rivoTRIO
+2025-04-03 00:25:31,104 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-03 00:25:31,104 - discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-03 00:25:46,759 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:25:46,759 - discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-04-03 00:25:46,760 - discord.voice_state - INFO - Connecting to voice...
+2025-04-03 00:25:46,760 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-04-03 00:25:46,933 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: brazil11186.discord.media
+2025-04-03 00:25:47,810 - discord.voice_state - INFO - Voice connection complete.
+2025-04-03 00:25:47,810 - discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-04-03 00:25:47,810 - discord_bot.player - INFO - Tentando reproduzir áudio: de-copao-na-mao-estourado de audios/originais/de-copao-na-mao-estourado.mp3
+2025-04-03 00:25:47,810 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:25:47,810 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:25:47,811 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:25:47,997 - discord_bot.player - INFO - Reprodução iniciada com sucesso: de-copao-na-mao-estourado
+2025-04-03 00:26:03,169 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:26:03,173 - discord.player - INFO - ffmpeg process 555 successfully terminated with return code of 0.
+2025-04-03 00:26:13,822 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:26:13,822 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:26:13,823 - discord_bot.player - INFO - Tentando reproduzir áudio: gato_rindo_estourado de audios/originais/gato_rindo_estourado.mp3
+2025-04-03 00:26:13,823 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:26:13,824 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:26:13,824 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:26:14,042 - discord_bot.player - INFO - Reprodução iniciada com sucesso: gato_rindo_estourado
+2025-04-03 00:26:17,472 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:26:17,474 - discord.player - INFO - ffmpeg process 579 successfully terminated with return code of 0.
+2025-04-03 00:26:22,097 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:26:22,102 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:26:22,107 - discord_bot.player - INFO - Tentando reproduzir áudio: faz_o_L de audios/originais/faz_o_L.mp3
+2025-04-03 00:26:22,109 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:26:22,113 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:26:22,117 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:26:22,334 - discord_bot.player - INFO - Reprodução iniciada com sucesso: faz_o_L
+2025-04-03 00:26:25,684 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:26:25,687 - discord.player - INFO - ffmpeg process 590 successfully terminated with return code of 0.
+2025-04-03 00:26:30,399 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:26:30,399 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:26:30,400 - discord_bot.player - INFO - Tentando reproduzir áudio: bob_esponja_triste de audios/originais/bob_esponja_triste.mp3
+2025-04-03 00:26:30,400 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:26:30,401 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:26:30,401 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:26:30,525 - discord_bot.player - INFO - Reprodução iniciada com sucesso: bob_esponja_triste
+2025-04-03 00:26:33,812 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:26:33,815 - discord.player - INFO - ffmpeg process 601 successfully terminated with return code of 0.
+2025-04-03 00:26:37,497 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:26:37,497 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:26:37,497 - discord_bot.player - INFO - Tentando reproduzir áudio: me_da_um_reaaaal de audios/originais/me_da_um_reaaaal.mp3
+2025-04-03 00:26:37,497 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:26:37,497 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:26:37,498 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:26:37,637 - discord_bot.player - INFO - Reprodução iniciada com sucesso: me_da_um_reaaaal
+2025-04-03 00:26:43,584 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:26:43,587 - discord.player - INFO - ffmpeg process 612 successfully terminated with return code of 0.
+2025-04-03 00:27:37,863 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:27:37,864 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:27:37,864 - discord_bot.player - INFO - Tentando reproduzir áudio: negona-do-bolsonaro de audios/originais/negona-do-bolsonaro.mp3
+2025-04-03 00:27:37,864 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:27:37,864 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:27:37,864 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:27:38,052 - discord_bot.player - INFO - Reprodução iniciada com sucesso: negona-do-bolsonaro
+2025-04-03 00:27:44,688 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:27:44,689 - discord.player - INFO - ffmpeg process 623 successfully terminated with return code of 0.
+2025-04-03 00:27:47,363 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de jhesscat_19929
+2025-04-03 00:27:47,365 - discord_bot.activation - INFO - Comando detectado: !listar de jhesscat_19929
+2025-04-03 00:27:55,631 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:27:55,631 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:27:55,631 - discord_bot.player - INFO - Tentando reproduzir áudio: gato_rindo_estourado de audios/originais/gato_rindo_estourado.mp3
+2025-04-03 00:27:55,631 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:27:55,631 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:27:55,632 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:27:55,761 - discord_bot.player - INFO - Reprodução iniciada com sucesso: gato_rindo_estourado
+2025-04-03 00:27:59,276 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:27:59,278 - discord.player - INFO - ffmpeg process 634 successfully terminated with return code of 0.
+2025-04-03 00:28:00,958 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:00,958 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:00,959 - discord_bot.player - INFO - Tentando reproduzir áudio: de_novo_nao de audios/editados/de_novo_nao_cortado.mp3
+2025-04-03 00:28:00,959 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:00,959 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:00,960 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:01,127 - discord_bot.player - INFO - Reprodução iniciada com sucesso: de_novo_nao
+2025-04-03 00:28:03,983 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:03,984 - discord.player - INFO - ffmpeg process 645 successfully terminated with return code of 0.
+2025-04-03 00:28:06,625 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:06,626 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:06,626 - discord_bot.player - INFO - Tentando reproduzir áudio: PARA_-_BENS de audios/originais/PARA_-_BENS.mp3
+2025-04-03 00:28:06,627 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:06,627 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:06,627 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:06,880 - discord_bot.player - INFO - Reprodução iniciada com sucesso: PARA_-_BENS
+2025-04-03 00:28:11,066 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:11,083 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:11,091 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:11,114 - discord_bot.player - INFO - Tentando reproduzir áudio: para-tira de audios/originais/para-tira.mp3
+2025-04-03 00:28:11,118 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:11,127 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:11,132 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:11,091 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:11,133 - discord.player - INFO - ffmpeg process 656 has not terminated. Waiting to terminate...
+2025-04-03 00:28:11,303 - discord.player - INFO - ffmpeg process 656 should have terminated with a return code of -9.
+2025-04-03 00:28:11,374 - discord_bot.player - INFO - Reprodução iniciada com sucesso: para-tira
+2025-04-03 00:28:13,967 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:13,968 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:13,968 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:13,969 - discord_bot.player - INFO - Tentando reproduzir áudio: noooo-e-muito-cremoso de audios/originais/noooo-e-muito-cremoso.mp3
+2025-04-03 00:28:13,969 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:13,969 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:13,969 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:13,989 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:13,991 - discord.player - INFO - ffmpeg process 667 has not terminated. Waiting to terminate...
+2025-04-03 00:28:14,004 - discord.player - INFO - ffmpeg process 667 should have terminated with a return code of -9.
+2025-04-03 00:28:14,153 - discord_bot.player - INFO - Reprodução iniciada com sucesso: noooo-e-muito-cremoso
+2025-04-03 00:28:17,975 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:17,989 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:17,990 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:17,990 - discord_bot.player - INFO - Tentando reproduzir áudio: eita-porra-relacoes_cortado de audios/editados/eita-porra-relacoes_cortado.mp3
+2025-04-03 00:28:17,990 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:18,009 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:18,009 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:18,012 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:18,060 - discord.player - INFO - ffmpeg process 678 has not terminated. Waiting to terminate...
+2025-04-03 00:28:18,119 - discord.player - INFO - ffmpeg process 678 should have terminated with a return code of -9.
+2025-04-03 00:28:18,184 - discord_bot.player - INFO - Reprodução iniciada com sucesso: eita-porra-relacoes_cortado
+2025-04-03 00:28:19,940 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:19,947 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:19,987 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:19,987 - discord_bot.player - INFO - Tentando reproduzir áudio: olha-a-maconha de audios/originais/olha-a-maconha.mp3
+2025-04-03 00:28:19,988 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:19,988 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:19,988 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:20,009 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:20,009 - discord.player - INFO - ffmpeg process 689 has not terminated. Waiting to terminate...
+2025-04-03 00:28:20,019 - discord.player - INFO - ffmpeg process 689 should have terminated with a return code of -9.
+2025-04-03 00:28:20,147 - discord_bot.player - INFO - Reprodução iniciada com sucesso: olha-a-maconha
+2025-04-03 00:28:30,031 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:30,041 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:30,044 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:30,049 - discord_bot.player - INFO - Tentando reproduzir áudio: pega_o_jack📍 de audios/originais/pega_o_jack📍.mp3
+2025-04-03 00:28:30,051 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:30,059 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:30,062 - discord.player - INFO - ffmpeg process 700 has not terminated. Waiting to terminate...
+2025-04-03 00:28:30,062 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:30,063 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:30,078 - discord.player - INFO - ffmpeg process 700 should have terminated with a return code of -9.
+2025-04-03 00:28:30,215 - discord_bot.player - INFO - Reprodução iniciada com sucesso: pega_o_jack📍
+2025-04-03 00:28:33,256 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:33,258 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:33,261 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:28:33,261 - discord_bot.player - INFO - Tentando reproduzir áudio: boa_noite_bruno_pqp_cortado de audios/editados/boa_noite_bruno_pqp_cortado.mp3
+2025-04-03 00:28:33,264 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:33,268 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:33,268 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:33,276 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:33,280 - discord.player - INFO - ffmpeg process 711 has not terminated. Waiting to terminate...
+2025-04-03 00:28:33,286 - discord.player - INFO - ffmpeg process 711 should have terminated with a return code of -9.
+2025-04-03 00:28:33,613 - discord_bot.player - INFO - Reprodução iniciada com sucesso: boa_noite_bruno_pqp_cortado
+2025-04-03 00:28:38,295 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:38,296 - discord.player - INFO - ffmpeg process 722 successfully terminated with return code of 0.
+2025-04-03 00:28:46,074 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:28:46,074 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:28:46,074 - discord_bot.player - INFO - Tentando reproduzir áudio: ah-xibiuzao-grandao_cortado de audios/editados/ah-xibiuzao-grandao_cortado.mp3
+2025-04-03 00:28:46,074 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:28:46,074 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:28:46,075 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:28:46,251 - discord_bot.player - INFO - Reprodução iniciada com sucesso: ah-xibiuzao-grandao_cortado
+2025-04-03 00:28:50,105 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:28:50,108 - discord.player - INFO - ffmpeg process 733 successfully terminated with return code of 0.
+2025-04-03 00:29:52,547 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:29:52,548 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:29:52,548 - discord_bot.player - INFO - Tentando reproduzir áudio: agora_deu_o_carai de audios/editados/agora_deu_o_carai_cortado.mp3
+2025-04-03 00:29:52,548 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:29:52,549 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:29:52,549 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:29:52,864 - discord_bot.player - INFO - Reprodução iniciada com sucesso: agora_deu_o_carai
+2025-04-03 00:29:56,573 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:29:56,575 - discord.player - INFO - ffmpeg process 744 successfully terminated with return code of 0.
+2025-04-03 00:30:13,572 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:30:13,572 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:30:13,572 - discord_bot.player - INFO - Tentando reproduzir áudio: baphomeeet_cortado_1 de audios/editados/baphomeeet_cortado_1.mp3
+2025-04-03 00:30:13,572 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:30:13,573 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:30:13,573 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:30:13,828 - discord_bot.player - INFO - Reprodução iniciada com sucesso: baphomeeet_cortado_1
+2025-04-03 00:30:18,596 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:30:18,597 - discord.player - INFO - ffmpeg process 755 successfully terminated with return code of 0.
+2025-04-03 00:30:46,455 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:30:46,455 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:30:46,455 - discord_bot.player - INFO - Tentando reproduzir áudio: olha-a-maconha de audios/originais/olha-a-maconha.mp3
+2025-04-03 00:30:46,455 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:30:46,455 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:30:46,456 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:30:46,667 - discord_bot.player - INFO - Reprodução iniciada com sucesso: olha-a-maconha
+2025-04-03 00:31:02,102 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:31:02,103 - discord.player - INFO - ffmpeg process 766 successfully terminated with return code of 0.
+2025-04-03 00:31:30,128 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:31:30,128 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:31:30,128 - discord_bot.player - INFO - Tentando reproduzir áudio: de-copao-na-mao-estourado de audios/originais/de-copao-na-mao-estourado.mp3
+2025-04-03 00:31:30,128 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:31:30,128 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:31:30,128 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:31:30,330 - discord_bot.player - INFO - Reprodução iniciada com sucesso: de-copao-na-mao-estourado
+2025-04-03 00:31:34,080 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:31:34,082 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:31:34,083 - discord_bot.utils - INFO - Áudio anterior interrompido para nova reprodução
+2025-04-03 00:31:34,083 - discord_bot.player - INFO - Tentando reproduzir áudio: ngm_vai_pegar_meu_telefone de audios/originais/ngm_vai_pegar_meu_telefone.mp3
+2025-04-03 00:31:34,083 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:31:34,084 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:31:34,085 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:31:34,093 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:31:34,094 - discord.player - INFO - ffmpeg process 777 has not terminated. Waiting to terminate...
+2025-04-03 00:31:34,112 - discord.player - INFO - ffmpeg process 777 should have terminated with a return code of -9.
+2025-04-03 00:31:34,241 - discord_bot.player - INFO - Reprodução iniciada com sucesso: ngm_vai_pegar_meu_telefone
+2025-04-03 00:31:34,982 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !adicionar de bea__triz
+2025-04-03 00:31:34,982 - discord_bot.activation - INFO - Comando detectado: !adicionar de bea__triz
+2025-04-03 00:31:38,668 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:31:38,670 - discord.player - INFO - ffmpeg process 788 successfully terminated with return code of 0.
+2025-04-03 00:31:43,854 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !ajuda de bea__triz
+2025-04-03 00:31:43,855 - discord_bot.activation - INFO - Comando detectado: !ajuda de bea__triz
+2025-04-03 00:33:37,072 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-03 00:33:37,072 - discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-03 00:33:41,769 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:33:41,769 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:33:41,769 - discord_bot.player - INFO - Tentando reproduzir áudio: medio-grave de audios/originais/medio-grave.mp3
+2025-04-03 00:33:41,769 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:33:41,770 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:33:41,770 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:33:42,035 - discord_bot.player - INFO - Reprodução iniciada com sucesso: medio-grave
+2025-04-03 00:33:52,014 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:33:52,014 - discord.player - INFO - ffmpeg process 799 successfully terminated with return code of 0.
+2025-04-03 00:35:42,120 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 00:35:42,120 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 00:35:42,121 - discord_bot.player - INFO - Tentando reproduzir áudio: de_novo_nao de audios/editados/de_novo_nao_cortado.mp3
+2025-04-03 00:35:42,121 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 00:35:42,121 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 00:35:42,121 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 00:35:42,298 - discord_bot.player - INFO - Reprodução iniciada com sucesso: de_novo_nao
+2025-04-03 00:35:45,145 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 00:35:45,145 - discord.player - INFO - ffmpeg process 888 successfully terminated with return code of 0.
+2025-04-03 01:01:44,379 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-03 01:01:44,382 - discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-03 01:02:06,181 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 01:02:06,181 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 01:02:06,181 - discord_bot.player - INFO - Tentando reproduzir áudio: cabeça_de_gelo de audios/originais/cabeça_de_gelo.mp3
+2025-04-03 01:02:06,181 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 01:02:06,183 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 01:02:06,183 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 01:02:06,370 - discord_bot.player - INFO - Reprodução iniciada com sucesso: cabeça_de_gelo
+2025-04-03 01:02:17,888 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 01:02:17,889 - discord.player - INFO - ffmpeg process 1558 successfully terminated with return code of 0.
+2025-04-03 01:02:34,440 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 01:02:34,440 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 01:02:34,441 - discord_bot.player - INFO - Tentando reproduzir áudio: sexta_feira_to_na-bala_estourado de audios/originais/sexta_feira_to_na-bala_estourado.mp3
+2025-04-03 01:02:34,441 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 01:02:34,441 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 01:02:34,441 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 01:02:34,690 - discord_bot.player - INFO - Reprodução iniciada com sucesso: sexta_feira_to_na-bala_estourado
+2025-04-03 01:02:56,467 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 01:02:56,467 - discord.player - INFO - ffmpeg process 1569 successfully terminated with return code of 0.
+2025-04-03 01:14:57,612 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-03 01:14:57,612 - discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-03 01:15:08,728 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 01:15:08,728 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 01:15:08,728 - discord_bot.player - INFO - Tentando reproduzir áudio: ta-enganando-o-cliente de audios/originais/ta-enganando-o-cliente.mp3
+2025-04-03 01:15:08,728 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 01:15:08,729 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 01:15:08,729 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 01:15:08,854 - discord_bot.player - INFO - Reprodução iniciada com sucesso: ta-enganando-o-cliente
+2025-04-03 01:15:17,193 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 01:15:17,193 - discord.player - INFO - ffmpeg process 1601 successfully terminated with return code of 0.
+2025-04-03 01:21:18,386 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-03 01:21:18,386 - discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-03 01:22:22,948 - discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-03 01:22:22,948 - discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-03 01:22:22,948 - discord_bot.player - INFO - Tentando reproduzir áudio: me-mata-de-uma-vez de audios/editados/me-mata-de-uma-vez_cortado.mp3
+2025-04-03 01:22:22,948 - discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-03 01:22:22,949 - discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-03 01:22:22,949 - discord_bot.player - INFO - Status Opus: Carregado
+2025-04-03 01:22:22,952 - discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar me-mata-de-uma-vez de bea__triz
+2025-04-03 01:22:22,953 - discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-03 01:22:23,145 - discord_bot.player - INFO - Reprodução iniciada com sucesso: me-mata-de-uma-vez
+2025-04-03 01:22:27,973 - discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-03 01:22:27,975 - discord.player - INFO - ffmpeg process 1707 successfully terminated with return code of 0.
+2025-04-04 23:27:58,487 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-04 23:28:05,438 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-04 23:28:05,438 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-04 23:28:05,438 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-04 23:28:05,441 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-04 23:28:05,441 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-04 23:28:05,450 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-04 23:28:05,450 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-04 23:28:05,451 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-04 23:28:05,458 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-04 23:28:05,463 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-04 23:28:05,467 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-04 23:30:53,006 - discord_bot.discord_bot.activation - INFO - Comando !ativar recebido de bea__triz no servidor rivoTRIO
+2025-04-04 23:30:53,007 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !ativar de bea__triz
+2025-04-04 23:30:53,007 - discord_bot.discord_bot.activation - INFO - Comando detectado: !ativar de bea__triz
+2025-04-04 23:30:53,284 - discord_bot.discord_bot.activation - INFO - Bot ativado por bea__triz no servidor rivoTRIO
+2025-04-05 00:41:16,463 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-05 00:41:19,002 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-05 00:41:19,006 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-05 00:41:19,007 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-05 00:41:19,013 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-05 00:41:19,013 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-05 00:41:19,022 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-05 00:41:19,023 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-05 00:41:19,023 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-05 00:41:19,028 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-05 00:41:19,030 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-05 00:41:19,034 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-05 00:46:49,020 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-05 00:46:51,566 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-05 00:46:51,566 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-05 00:46:51,566 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-05 00:46:51,578 - discord_bot.discord_bot.activation - INFO - Configurações salvas: duração = 7200 segundos
+2025-04-05 00:46:51,578 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-05 00:46:51,578 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-05 00:46:51,604 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-05 00:46:51,604 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-05 00:46:51,604 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-05 00:46:51,606 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-05 00:46:51,612 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-05 00:46:51,617 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-05 22:44:37,295 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-05 22:44:39,863 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-05 22:44:39,864 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-05 22:44:39,864 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-05 22:44:39,878 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 7200 segundos
+2025-04-05 22:44:39,878 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-05 22:44:39,878 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-05 22:44:39,884 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-05 22:44:39,884 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-05 22:44:39,884 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-05 22:44:39,888 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-05 22:44:39,891 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-05 22:44:39,896 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-05 22:46:50,614 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !status de bea__triz
+2025-04-05 22:46:50,614 - discord_bot.discord_bot.activation - INFO - Comando detectado: !status de bea__triz
+2025-04-05 22:47:31,546 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-05 22:47:34,225 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-05 22:47:34,225 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-05 22:47:34,225 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-05 22:47:34,231 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 7200 segundos
+2025-04-05 22:47:34,231 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-05 22:47:34,231 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-05 22:47:34,233 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-05 22:47:34,233 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-05 22:47:34,233 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-05 22:47:34,234 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-05 22:47:34,235 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-05 22:47:34,239 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-05 22:47:42,613 - discord_bot.discord_bot.activation - INFO - Comando !ativar recebido de bea__triz no servidor rivoTRIO
+2025-04-05 22:47:42,614 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !ativar de bea__triz
+2025-04-05 22:47:42,614 - discord_bot.discord_bot.activation - INFO - Comando detectado: !ativar de bea__triz
+2025-04-05 22:47:42,806 - discord_bot.discord_bot.activation - INFO - Bot ativado por bea__triz no servidor rivoTRIO
+2025-04-05 22:47:50,836 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-05 22:47:50,836 - discord_bot.discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-05 22:52:10,514 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-05 22:52:10,514 - discord_bot.discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-05 22:53:06,744 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 22:53:06,744 - discord_bot.discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-04-05 22:53:07,756 - discord_bot.discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-04-05 22:53:07,756 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: bob_esponja_triste de audios/originais/bob_esponja_triste.mp3
+2025-04-05 22:53:07,756 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 22:53:07,756 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 22:53:07,756 - discord_bot.discord_bot.player - INFO - Status Opus: Não carregado
+2025-04-05 22:53:08,224 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: bob_esponja_triste
+2025-04-05 22:53:11,403 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 22:54:08,290 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar 💤 de bea__triz
+2025-04-05 22:54:08,290 - discord_bot.discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-05 22:54:31,243 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 22:54:31,243 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 22:54:31,244 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: z_z_z_z_z_z_ de audios/editados/z_z_z_z_z_z_cortado.mp3
+2025-04-05 22:54:31,244 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 22:54:31,244 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 22:54:31,244 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 22:54:31,251 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar z_z_z_z_z_z_ de bea__triz
+2025-04-05 22:54:31,252 - discord_bot.discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-05 22:54:31,444 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: z_z_z_z_z_z_
+2025-04-05 22:54:36,272 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 22:55:15,841 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 22:55:15,842 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 22:55:15,843 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: me_da_um_reaaaal de audios/originais/me_da_um_reaaaal.mp3
+2025-04-05 22:55:15,843 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 22:55:15,844 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 22:55:15,844 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 22:55:16,034 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: me_da_um_reaaaal
+2025-04-05 22:55:21,929 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 22:55:39,013 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 22:55:39,014 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 22:55:39,014 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: uma_piroquinha_pfvr de audios/originais/uma_piroquinha_pfvr.mp3
+2025-04-05 22:55:39,014 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 22:55:39,015 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 22:55:39,015 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 22:55:39,020 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar uma_piroquinha_pfvr de bea__triz
+2025-04-05 22:55:39,021 - discord_bot.discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-05 22:55:39,232 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: uma_piroquinha_pfvr
+2025-04-05 22:55:54,079 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 22:58:02,770 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 22:58:02,772 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 22:58:02,772 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: estragos_unidos de audios/editados/american-anthem-gun-and-eagle_cortado.mp3
+2025-04-05 22:58:02,772 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 22:58:02,772 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 22:58:02,772 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 22:58:02,776 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar estragos_unidos de bea__triz
+2025-04-05 22:58:02,779 - discord_bot.discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-05 22:58:02,994 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: estragos_unidos
+2025-04-05 22:58:08,796 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 22:59:09,935 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-05 22:59:09,935 - discord_bot.discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-05 22:59:10,571 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-05 22:59:13,134 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-05 22:59:13,134 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-05 22:59:13,134 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-05 22:59:13,136 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 7200 segundos
+2025-04-05 22:59:13,136 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-05 22:59:13,136 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-05 22:59:13,138 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-05 22:59:13,138 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-05 22:59:13,139 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-05 22:59:13,139 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-05 22:59:13,140 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-05 22:59:13,145 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-05 22:59:21,517 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !status de bea__triz
+2025-04-05 22:59:21,517 - discord_bot.discord_bot.activation - INFO - Comando detectado: !status de bea__triz
+2025-04-05 22:59:31,158 - discord_bot.discord_bot.activation - INFO - Comando !ativar recebido de bea__triz no servidor rivoTRIO
+2025-04-05 22:59:31,159 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !ativar de bea__triz
+2025-04-05 22:59:31,159 - discord_bot.discord_bot.activation - INFO - Comando detectado: !ativar de bea__triz
+2025-04-05 22:59:31,365 - discord_bot.discord_bot.activation - INFO - Bot ativado por bea__triz no servidor rivoTRIO
+2025-04-05 22:59:41,258 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-05 22:59:41,258 - discord_bot.discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-05 23:06:16,023 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 23:06:16,023 - discord_bot.discord_bot.utils - INFO - Tentativa 1 de conectar ao canal Jogos
+2025-04-05 23:06:16,024 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !tocar de_novo_nao de bea__triz
+2025-04-05 23:06:16,024 - discord_bot.discord_bot.activation - INFO - Comando detectado: !tocar de bea__triz
+2025-04-05 23:06:17,048 - discord_bot.discord_bot.utils - INFO - Conectado com sucesso ao canal de voz: Jogos
+2025-04-05 23:06:17,049 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: de_novo_nao de audios/editados/de_novo_nao_cortado.mp3
+2025-04-05 23:06:17,049 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 23:06:17,049 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 23:06:17,049 - discord_bot.discord_bot.player - INFO - Status Opus: Não carregado
+2025-04-05 23:06:17,628 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: de_novo_nao
+2025-04-05 23:06:20,167 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 23:11:47,909 - discord_bot.discord_bot.activation - INFO - Mensagem com prefixo '!' recebida: !listar de bea__triz
+2025-04-05 23:11:47,912 - discord_bot.discord_bot.activation - INFO - Comando detectado: !listar de bea__triz
+2025-04-05 23:12:39,814 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 23:12:39,815 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 23:12:39,815 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: de_novo_nao de audios/editados/de_novo_nao_cortado.mp3
+2025-04-05 23:12:39,815 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 23:12:39,816 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 23:12:39,816 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 23:12:40,026 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: de_novo_nao
+2025-04-05 23:12:42,840 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 23:13:26,907 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 23:13:26,909 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 23:13:26,910 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: ah-xibiuzao-grandao de audios/editados/ah-xibiuzao-grandao_cortado.mp3
+2025-04-05 23:13:26,910 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 23:13:26,911 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 23:13:26,911 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 23:13:27,056 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: ah-xibiuzao-grandao
+2025-04-05 23:13:30,939 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-05 23:13:58,206 - discord_bot.discord_bot.utils - INFO - Tentando conectar ao canal: Jogos (ID: 1326966609784344644)
+2025-04-05 23:13:58,208 - discord_bot.discord_bot.utils - INFO - Já conectado ao canal correto: Jogos
+2025-04-05 23:13:58,210 - discord_bot.discord_bot.player - INFO - Tentando reproduzir áudio: happy_happy_happy de audios/editados/happy_happy_happy_cortado.mp3
+2025-04-05 23:13:58,210 - discord_bot.discord_bot.player - INFO - Canal de voz: Jogos, guild: rivoTRIO
+2025-04-05 23:13:58,210 - discord_bot.discord_bot.player - INFO - FFMPEG path: /nix/store/3zc5jbvqzrn8zmva4fx5p0nh4yy03wk4-ffmpeg-6.1.1-bin/bin/ffmpeg
+2025-04-05 23:13:58,210 - discord_bot.discord_bot.player - INFO - Status Opus: Carregado
+2025-04-05 23:13:58,353 - discord_bot.discord_bot.player - INFO - Reprodução iniciada com sucesso: happy_happy_happy
+2025-04-05 23:14:02,235 - discord_bot.discord_bot.player - INFO - Fila do servidor 1326966609784344637 concluída
+2025-04-06 00:14:06,094 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-06 00:14:09,800 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-06 00:14:09,800 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-06 00:14:09,800 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-06 00:14:09,805 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 43200 segundos
+2025-04-06 00:14:09,805 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-06 00:14:09,805 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-06 00:14:09,810 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-06 00:14:09,811 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-06 00:14:09,811 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-06 00:14:09,814 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-06 00:14:09,819 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-06 00:14:09,820 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-06 00:17:09,126 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-06 00:17:11,687 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-06 00:17:11,687 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-06 00:17:11,687 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-06 00:17:11,689 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 43200 segundos
+2025-04-06 00:17:11,690 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-06 00:17:11,690 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-06 00:17:11,692 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-06 00:17:11,692 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-06 00:17:11,693 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-06 00:17:11,694 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-06 00:17:11,695 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-06 00:17:11,696 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso
+2025-04-06 15:27:58,632 - discord_bot.discord_bot - WARNING - Não foi possível carregar a biblioteca Opus. A reprodução de áudio pode não funcionar corretamente.
+2025-04-06 15:28:01,339 - discord_bot.discord_bot - INFO - Bot conectado como bot_de_sons#2829 (ID: 1350620830358573129)
+2025-04-06 15:28:01,339 - discord_bot.discord_bot - INFO - Bot conectado a 1 servidores:
+2025-04-06 15:28:01,339 - discord_bot.discord_bot - INFO - - rivoTRIO (ID: 1326966609784344637)
+2025-04-06 15:28:01,346 - discord_bot.discord_bot.activation - INFO - Carregada duração personalizada: 43200 segundos
+2025-04-06 15:28:01,346 - discord_bot.discord_bot.activation - INFO - Sistema de ativação temporal iniciado
+2025-04-06 15:28:01,346 - discord_bot.discord_bot - INFO - Cog cogs.activation carregado com sucesso
+2025-04-06 15:28:01,350 - discord_bot.discord_bot.player - INFO - Sistema de fila de reprodução inicializado
+2025-04-06 15:28:01,351 - discord_bot.discord_bot.player - INFO - FFmpeg disponível: True
+2025-04-06 15:28:01,351 - discord_bot.discord_bot - INFO - Cog cogs.player carregado com sucesso
+2025-04-06 15:28:01,354 - discord_bot.discord_bot - INFO - Cog cogs.storage carregado com sucesso
+2025-04-06 15:28:01,355 - discord_bot.discord_bot - INFO - Cog cogs.editor carregado com sucesso
+2025-04-06 15:28:01,357 - discord_bot.discord_bot - INFO - Cog cogs.ui carregado com sucesso

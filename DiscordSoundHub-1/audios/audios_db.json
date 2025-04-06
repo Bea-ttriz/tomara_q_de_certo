@@ -1,0 +1,396 @@
+{
+  "audios": [
+    {
+      "nome": "agora_deu_o_carai",
+      "caminho": "audios/editados/agora_deu_o_carai_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "de_novo_nao",
+      "caminho": "audios/editados/de_novo_nao_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 3000
+    },
+    {
+      "nome": "among-us",
+      "caminho": "audios/originais/among-us.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 4572
+    },
+    {
+      "nome": "bob_esponja_triste",
+      "caminho": "audios/originais/bob_esponja_triste.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 3384
+    },
+    {
+      "nome": "cabeça_de_gelo",
+      "caminho": "audios/originais/cabeça_de_gelo.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 11693
+    },
+    {
+      "nome": "de-copao-na-mao-estourado",
+      "caminho": "audios/originais/de-copao-na-mao-estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 15221
+    },
+    {
+      "nome": "gato_rindo_estourado",
+      "caminho": "audios/originais/gato_rindo_estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 3631
+    },
+    {
+      "nome": "faz_o_L",
+      "caminho": "audios/originais/faz_o_L.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 3553
+    },
+    {
+      "nome": "medio-grave",
+      "caminho": "audios/originais/medio-grave.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 10239
+    },
+    {
+      "nome": "AAAAAAAAAAAA",
+      "caminho": "audios/editados/AAAAAAAAAAAA_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 2000
+    },
+    {
+      "nome": "ah-xibiuzao-grandao",
+      "caminho": "audios/editados/ah-xibiuzao-grandao_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "boa_noite_bruno_pqp",
+      "caminho": "audios/editados/boa_noite_bruno_pqp_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 5000
+    },
+    {
+      "nome": "eita-porra-relacoes",
+      "caminho": "audios/editados/eita-porra-relacoes_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 6000
+    },
+    {
+      "nome": "e_um_real_a_palma",
+      "caminho": "audios/editados/e_um_real_a_palma_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 6000
+    },
+    {
+      "nome": "happy_happy_happy",
+      "caminho": "audios/editados/happy_happy_happy_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "eu-e-o-diabo",
+      "caminho": "audios/editados/eu-e-o-diabo_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "hino_da_urss",
+      "caminho": "audios/editados/hino_da_urss_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 5000
+    },
+    {
+      "nome": "me_da_um_reaaaal",
+      "caminho": "audios/originais/me_da_um_reaaaal.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 6075
+    },
+    {
+      "nome": "negona-do-bolsonaro",
+      "caminho": "audios/originais/negona-do-bolsonaro.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 6818
+    },
+    {
+      "nome": "ngm_vai_pegar_meu_telefone",
+      "caminho": "audios/originais/ngm_vai_pegar_meu_telefone.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 4574
+    },
+    {
+      "nome": "nossa-estourado",
+      "caminho": "audios/originais/nossa-estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 1056
+    },
+    {
+      "nome": "me-mata-de-uma-vez",
+      "caminho": "audios/editados/me-mata-de-uma-vez_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 5000
+    },
+    {
+      "nome": "noooo-e-muito-cremoso",
+      "caminho": "audios/originais/noooo-e-muito-cremoso.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 7125
+    },
+    {
+      "nome": "olha-a-maconha",
+      "caminho": "audios/originais/olha-a-maconha.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 15627
+    },
+    {
+      "nome": "PARA_-_BENS",
+      "caminho": "audios/originais/PARA_-_BENS.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 6107
+    },
+    {
+      "nome": "para-tira",
+      "caminho": "audios/originais/para-tira.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 6896
+    },
+    {
+      "nome": "pega_o_jack📍",
+      "caminho": "audios/originais/pega_o_jack📍.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 8223
+    },
+    {
+      "nome": "peguei_o_esquema_smzinho",
+      "caminho": "audios/originais/peguei_o_esquema_smzinho.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 13610
+    },
+    {
+      "nome": "baphomeeet",
+      "caminho": "audios/editados/baphomeeet_cortado_1_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "rojao_estourado",
+      "caminho": "audios/originais/rojao_estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 5224
+    },
+    {
+      "nome": "pica_pau_não_vou",
+      "caminho": "audios/originais/pica_pau_não_vou.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 1649
+    },
+    {
+      "nome": "sad-meow-song",
+      "caminho": "audios/originais/sad-meow-song.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 25039
+    },
+    {
+      "nome": "se-loko-num-compensa",
+      "caminho": "audios/originais/se-loko-num-compensa.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 2520
+    },
+    {
+      "nome": "spiderman",
+      "caminho": "audios/editados/spiderman_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 5000
+    },
+    {
+      "nome": "smzinho_comunista_cortado",
+      "caminho": "audios/editados/smzinho_comunista_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 5000
+    },
+    {
+      "nome": "sera-que-tem-alguem-vivo",
+      "caminho": "audios/originais/sera-que-tem-alguem-vivo.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 10476
+    },
+    {
+      "nome": "ta-enganando-o-cliente",
+      "caminho": "audios/originais/ta-enganando-o-cliente.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 8455
+    },
+    {
+      "nome": "sexta_feira_to_na-bala_estourado",
+      "caminho": "audios/originais/sexta_feira_to_na-bala_estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 22000
+    },
+    {
+      "nome": "ai_que_vergonha",
+      "caminho": "audios/editados/cade_o_hambuguer_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "ta-bom-vc-fala-demais",
+      "caminho": "audios/originais/ta-bom-vc-fala-demais.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 9796
+    },
+    {
+      "nome": "spongebob-sad-song",
+      "caminho": "audios/editados/spongebob-sad-song_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 7000
+    },
+    {
+      "nome": "ta_porra_menor",
+      "caminho": "audios/originais/ta_porra_menor.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 2786
+    },
+    {
+      "nome": "the_office",
+      "caminho": "audios/originais/the_office.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 12251
+    },
+    {
+      "nome": "vc_deve_smt_agora",
+      "caminho": "audios/originais/vc_deve_smt_agora.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 5085
+    },
+    {
+      "nome": "vine-boom",
+      "caminho": "audios/originais/vine-boom.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 1255
+    },
+    {
+      "nome": "vou-nada",
+      "caminho": "audios/originais/vou-nada.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 2717
+    },
+    {
+      "nome": "vtmnc-piranha",
+      "caminho": "audios/originais/vtmnc-piranha.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 10560
+    },
+    {
+      "nome": "wait-wait-wait-what-the-hell-legend-sound",
+      "caminho": "audios/editados/wait-wait-wait-what-the-hell-legend-sound_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 3000
+    },
+    {
+      "nome": "yippee-tbh",
+      "caminho": "audios/originais/yippee-tbh.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 981
+    },
+    {
+      "nome": "samsung-estourado",
+      "caminho": "audios/originais/samsung-estourado.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 14086
+    },
+    {
+      "nome": "EITA_GLORIA",
+      "caminho": "audios/editados/EITA_GLORIA_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "auughhh",
+      "caminho": "audios/editados/auughhh_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "✈",
+      "duracao": 2000
+    },
+    {
+      "nome": "z_z_z_z_z_z_",
+      "caminho": "audios/editados/z_z_z_z_z_z_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "💤",
+      "duracao": 5000
+    },
+    {
+      "nome": "estragos_unidos",
+      "caminho": "audios/editados/american-anthem-gun-and-eagle_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 6000
+    },
+    {
+      "nome": "uma_piroquinha_pfvr",
+      "caminho": "audios/editados/uma_piroquinha_pfvr_cortado.mp3",
+      "tipo": "editado",
+      "emoji": "",
+      "duracao": 4000
+    },
+    {
+      "nome": "galaxy-meme",
+      "caminho": "audios/originais/galaxy-meme.mp3",
+      "tipo": "original",
+      "emoji": "",
+      "duracao": 18984
+    }
+  ]
+}

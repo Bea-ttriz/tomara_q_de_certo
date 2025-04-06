@@ -1,0 +1,292 @@
+import os
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file
+from werkzeug.utils import secure_filename
+import json
+import logging
+import database
+import utils
+from pydub import AudioSegment
+import io
+
+# Configuração de logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+app = Flask(__name__)
+app.secret_key = os.environ.get("SESSION_SECRET", "rivoTRIOwebapp")
+
+# Garantir que os diretórios existam
+def ensure_directories_exist():
+    dirs = utils.get_audio_paths()
+    for dir_path in dirs:
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+
+ensure_directories_exist()
+
+@app.route('/')
+def index():
+    """Página inicial com todos os áudios disponíveis"""
+    # Inicializar o banco de dados se não existir
+    database.init_db()
+    audios = database.get_all_audios()
+    return render_template('index.html', audios=audios)
+
+@app.route('/audio/<name>')
+def get_audio(name):
+    """Retorna o arquivo de áudio para reprodução"""
+    audio = database.get_audio_by_name(name)
+    if audio:
+        return send_file(audio['caminho'], mimetype='audio/mpeg')
+    return "Áudio não encontrado", 404
+
+@app.route('/audio/view/<name>')
+def view_audio(name):
+    """Página de detalhes de um áudio específico"""
+    audio = database.get_audio_by_name(name)
+    if not audio:
+        flash('Áudio não encontrado')
+        return redirect(url_for('index'))
+    return render_template('audio_detail.html', audio=audio)
+@app.route('/audio/upload', methods=['GET', 'POST'])
+def upload_audio():
+    """Página para upload de novos áudios"""
+    if request.method == 'POST':
+        if 'audio_file' not in request.files:
+            flash('Nenhum arquivo selecionado')
+            return redirect(request.url)
+        
+        file = request.files['audio_file']
+        if file.filename == '':
+            flash('Nenhum arquivo selecionado')
+            return redirect(request.url)
+        
+        if file:
+            filename = secure_filename(file.filename)
+            nome = request.form.get('nome', os.path.splitext(filename)[0])
+            nome = utils.sanitize_filename(nome)
+            emoji = request.form.get('emoji', '')
+            
+            # Verificar se o áudio já existe
+            existing_audio = database.get_audio_by_name(nome)
+            if existing_audio:
+                flash(f'Já existe um áudio com o nome "{nome}"')
+                return redirect(request.url)
+            
+            # Salvar o arquivo
+            audio_dir = utils.get_audio_paths()[0]  # Pasta de originais
+            file_path = os.path.join(audio_dir, f"{nome}.mp3")
+            
+            # Converter para MP3 se necessário
+            try:
+                audio = AudioSegment.from_file(file)
+                audio.export(file_path, format="mp3")
+                
+                # Obter duração
+                duracao = len(audio)
+                
+                # Adicionar ao banco de dados
+                database.add_audio(nome, file_path, "original", emoji, duracao)
+                flash(f'Áudio "{nome}" adicionado com sucesso!')
+                return redirect(url_for('index'))
+            except Exception as e:
+                logger.error(f"Erro ao processar o arquivo: {e}")
+                flash(f'Erro ao processar o arquivo: {e}')
+                return redirect(request.url)
+    
+    return render_template('upload.html')
+@app.route('/audio/edit/<name>', methods=['GET', 'POST'])
+def edit_audio(name):
+    """Página para edição de áudios"""
+    audio = database.get_audio_by_name(name)
+    if not audio:
+        flash('Áudio não encontrado')
+        return redirect(url_for('index'))
+    
+    if request.method == 'POST':
+        operation = request.form.get('operation')
+        
+        if operation == 'rename':
+            new_name = request.form.get('new_name')
+            new_name = utils.sanitize_filename(new_name)
+            
+            if database.get_audio_by_name(new_name) and new_name != name:
+                flash(f'Já existe um áudio com o nome "{new_name}"')
+                return redirect(url_for('edit_audio', name=name))
+            
+            updates = {'nome': new_name}
+            database.update_audio(name, updates)
+            flash(f'Áudio renomeado para "{new_name}" com sucesso!')
+            return redirect(url_for('index'))
+        
+        elif operation == 'set_emoji':
+            emoji = request.form.get('emoji', '')
+            updates = {'emoji': emoji}
+            database.update_audio(name, updates)
+            flash(f'Emoji atualizado com sucesso!')
+            return redirect(url_for('edit_audio', name=name))
+        
+        elif operation == 'cut':
+            start_time = request.form.get('start_time')
+            end_time = request.form.get('end_time')
+            
+            try:
+                start_ms = utils.parse_time(start_time)
+                end_ms = utils.parse_time(end_time)
+                
+                if start_ms >= end_ms:
+                    flash('O tempo de início deve ser menor que o tempo de fim')
+                    return redirect(url_for('edit_audio', name=name))
+                
+                # Gerar um novo nome para o áudio editado
+                new_name = f"{name}_cortado"
+                count = 1
+                while database.get_audio_by_name(new_name):
+                    new_name = f"{name}_cortado_{count}"
+                    count += 1
+                
+                # Caminho para o novo arquivo
+                audio_dir = utils.get_audio_paths()[1]  # Pasta de editados
+                new_path = os.path.join(audio_dir, f"{new_name}.mp3")
+                
+                # Cortar o áudio
+                utils.cut_audio(audio['caminho'], new_path, start_ms, end_ms)
+                
+                # Obter duração do novo áudio
+                audio_segment = AudioSegment.from_file(new_path)
+                duracao = len(audio_segment)
+                
+                # Adicionar ao banco de dados
+                database.add_audio(new_name, new_path, "editado", "", duracao)
+                flash(f'Áudio cortado com sucesso e salvo como "{new_name}"!')
+                return redirect(url_for('index'))
+            except Exception as e:
+                logger.error(f"Erro ao cortar o áudio: {e}")
+                flash(f'Erro ao cortar o áudio: {e}')
+                return redirect(url_for('edit_audio', name=name))
+        
+        elif operation == 'reverse':
+            # Gerar um novo nome para o áudio editado
+            new_name = f"{name}_invertido"
+            count = 1
+            while database.get_audio_by_name(new_name):
+                new_name = f"{name}_invertido_{count}"
+                count += 1
+            
+            # Caminho para o novo arquivo
+            audio_dir = utils.get_audio_paths()[1]  # Pasta de editados
+            new_path = os.path.join(audio_dir, f"{new_name}.mp3")
+            
+            try:
+                # Inverter o áudio
+                utils.reverse_audio(audio['caminho'], new_path)
+                
+                # Obter duração do novo áudio (deve ser a mesma do original)
+                duracao = audio.get('duracao', 0)
+                
+                # Adicionar ao banco de dados
+                database.add_audio(new_name, new_path, "editado", "", duracao)
+                flash(f'Áudio invertido com sucesso e salvo como "{new_name}"!')
+                return redirect(url_for('index'))
+            except Exception as e:
+                logger.error(f"Erro ao inverter o áudio: {e}")
+                flash(f'Erro ao inverter o áudio: {e}')
+                return redirect(url_for('edit_audio', name=name))
+        
+        elif operation == 'speed':
+            speed_factor = float(request.form.get('speed_factor', 1.0))
+            
+            if speed_factor <= 0:
+                flash('O fator de velocidade deve ser maior que zero')
+                return redirect(url_for('edit_audio', name=name))
+            
+            # Gerar um novo nome para o áudio editado
+            speed_text = "rapido" if speed_factor > 1 else "lento"
+            new_name = f"{name}_{speed_text}"
+            count = 1
+            while database.get_audio_by_name(new_name):
+                new_name = f"{name}_{speed_text}_{count}"
+                count += 1
+            
+            # Caminho para o novo arquivo
+            audio_dir = utils.get_audio_paths()[1]  # Pasta de editados
+            new_path = os.path.join(audio_dir, f"{new_name}.mp3")
+            
+            try:
+                # Alterar a velocidade do áudio
+                utils.change_speed(audio['caminho'], new_path, speed_factor)
+                
+                # Obter duração do novo áudio
+                audio_segment = AudioSegment.from_file(new_path)
+                duracao = len(audio_segment)
+                
+                # Adicionar ao banco de dados
+                database.add_audio(new_name, new_path, "editado", "", duracao)
+                flash(f'Velocidade alterada com sucesso e salvo como "{new_name}"!')
+                return redirect(url_for('index'))
+            except Exception as e:
+                logger.error(f"Erro ao alterar a velocidade do áudio: {e}")
+                flash(f'Erro ao alterar a velocidade do áudio: {e}')
+                return redirect(url_for('edit_audio', name=name))
+    
+    return render_template('edit.html', audio=audio)
+@app.route('/audio/delete/<name>', methods=['POST'])
+def delete_audio(name):
+    """Excluir um áudio"""
+    audio = database.get_audio_by_name(name)
+    if not audio:
+        flash('Áudio não encontrado')
+        return redirect(url_for('index'))
+    
+    try:
+        # Remover o arquivo
+        if os.path.exists(audio['caminho']):
+            os.remove(audio['caminho'])
+        
+        # Remover do banco de dados
+        database.remove_audio(name)
+        flash(f'Áudio "{name}" excluído com sucesso!')
+    except Exception as e:
+        logger.error(f"Erro ao excluir o áudio: {e}")
+        flash(f'Erro ao excluir o áudio: {e}')
+    
+    return redirect(url_for('index'))
+
+@app.route('/api/audios', methods=['GET'])
+def api_audios():
+    """API para listar todos os áudios"""
+    audios = database.get_all_audios()
+    return jsonify(audios)
+
+@app.route('/audio/share/<name>')
+def share_audio(name):
+    """Gera um link de compartilhamento para um áudio específico"""
+    audio = database.get_audio_by_name(name)
+    if not audio:
+        flash('Áudio não encontrado')
+        return redirect(url_for('index'))
+    
+    # Gerar uma URL compartilhável para o áudio
+    share_url = url_for('view_audio', name=name, _external=True)
+    
+    # Retornar a página com informações de compartilhamento
+    return render_template('share.html', audio=audio, share_url=share_url)
+
+@app.route('/api/share_info/<name>', methods=['GET'])
+def api_share_info(name):
+    """API para obter informações de compartilhamento de um áudio"""
+    audio = database.get_audio_by_name(name)
+    if not audio:
+        return jsonify({"error": "Áudio não encontrado"}), 404
+    
+    share_url = url_for('view_audio', name=name, _external=True)
+    play_command = f"!tocar {name}"
+    
+    return jsonify({
+        "audio": audio,
+        "share_url": share_url,
+        "play_command": play_command
+    })
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
